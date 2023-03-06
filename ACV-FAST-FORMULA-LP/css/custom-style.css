@@ -1,0 +1,20 @@
+.mobotitle-wrapper h2 {
+    font-size: 31.5px;
+}
+
+.mobocontent-wrapper p {
+    font-size: 19.2px;
+    margin: 19.2px 0;
+}
+
+.modal-body {
+    border: 1px solid grey;
+    margin: 7%;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    overflow-y: initial !important;
+    margin-top: 25px !important;
+}
