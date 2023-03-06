@@ -68,7 +68,6 @@
 
     window.onload = function () {
 
-      $('img[usemap]').rwdImageMaps();
 
       $('[data-brand-name]').text(brand)
       $('[data-website]').text(website)
@@ -96,7 +95,6 @@
         // phone if it does not have anything inside
         // like this:
         // <a data-phone-link></a>
-        console.log('$(el).prop("tagName")', $(el).prop("tagName"))
         if ($(el).html().trim() === '' && $(el).prop("tagName") !== 'AREA'){
           $(el).text(phone)
         }
