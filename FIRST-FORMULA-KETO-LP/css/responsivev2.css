@@ -1,0 +1,114 @@
+@media (min-width:900px) and (max-width:1441px) {
+	body{height: 100vh;}
+ }
+ @media (min-width:1200px) and (max-width:1760px) {
+ }
+
+@media (min-width:200px) and (max-width:1199px) {
+.phone{ width:90%;
+	font-family: "Myriad Pro", Arial, serif;
+	font-size: 22px;
+	margin:0 5% 0 5%;
+}
+.phone img {width: 100%;}
+.phone p { display:flex; width:100%;}
+.phone p span { font-weight: bold; color: #2A3A82; margin-left: 0.2em;}
+.phone p img { width: 30px; height: 30px;}
+
+.desktop{ display:none;}
+body{ background:  url(../img/mobobg.png) no-repeat bottom left; background-size:100%; height:100vh; }
+
+.mobile{ width:100%; clear:both; display:block; padding:0 }
+header{ background:#263b88; border-top:8px solid #000; text-align:center; padding:0  ;}
+header img {
+  width: auto;
+  height: 38px;
+}
+.mobotitle {
+  width: 100%;
+  padding: 3% 0;
+  margin: 0;
+}
+.mobotitle img{ display:block; width:100%;}
+.moboright{ width:100%; float:left; margin-bottom:40%}
+
+.mobotitme{ width:66%;}
+.mobotitme img{ width:100%;}
+/*.phone {width: 100%;}*/
+/*.phone img{ width:100%;}*/
+
+.moboemail{ width:56%; margin:0 0 2%;}
+.moboemail img{ width:100%;}
+.footcontent {width: 100%;margin: 0;}
+.mobocontent{ padding:0 0;}
+
+}
+
+
+ @media (max-width: 428px) and (max-height: 926px){
+	body{ background: url(../img/mobobg.png) no-repeat 100% 70%; background-size:100%; height:100vh; }	
+	body::after {
+	  content: "";
+	  background-color: #263b88;
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 12%;
+	  border-top:10px solid #101012;
+	}
+}
+
+	
+
+@media (max-width: 412px) and (max-height: 915px){
+	body{ background: url(../img/mobobg.png) no-repeat 100% 70%; background-size:100%; height:100vh; }	
+	body::after {
+		content: "";
+		background-color: #263b88;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 12%;
+		border-top:10px solid #101012;
+	}
+	.phone{ width:90%;
+		font-size: 16px;
+		margin-left: 1em;
+		margin-right: 5em;
+	}
+	.phone p { margin-left: 0.2em; display:flex; width:100%;}
+	.phone p span { font-weight: bold; color: #2A3A82; margin-left: 0.2em;}
+	.phone p img { width: 20px; height: 20px;}
+}
+	
+	
+@media (max-width: 412px) and (max-height: 883px){
+	body{ background: url(../img/mobobg.png) no-repeat 100% 70%; background-size:100%; height:100vh; }	
+	body::after {
+		  content: "";
+		  background-color: #263b88;
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 12%;
+		  border-top:10px solid #101012;
+		}
+	}
+	
+		
+@media (max-width: 360px) and (max-height: 800px){
+	body{ background: url(../img/mobobg.png) no-repeat 100% 70%; background-size:100%; height:100vh; }	
+	body::after {
+		  content: "";
+		  background-color: #263b88;
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 12%;
+		  border-top:10px solid #101012;
+		}
+	}
