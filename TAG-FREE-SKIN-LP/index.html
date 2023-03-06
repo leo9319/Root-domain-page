@@ -7,6 +7,7 @@
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Jekyll v4.0.1">
 <title>TAG-FREE-SKIN-LP</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!-- Custom styles for this template -->
 <link href="css/layout.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
@@ -120,8 +121,10 @@
     
  
     
-    <div class="phone">
-    	<a href="#"><img src="img/emailphone.png"></a>
+    <div class="phone" style="position:relative">
+    	<img src="img/emailphone.png" style="width: 100%; height: auto;">
+      <a data-phone-link><div style="position: absolute; left: 10%; top: 50%; width: 36%; height: 16%;"></div></a>
+      <a data-email-link><div style="position: absolute; left: 10%; top: 70%; width: 54%; height: 20%;"></div></a>
     </div>
     
     
@@ -140,7 +143,11 @@
         <div class="moboright">
         <div class="mobocontent">
         	
-             	<div class="phone"><img src="img/emailmobophone.png"></div>
+             	<div class="phone" style="position:relative;">
+                <img src="img/emailmobophone.png" style="width: 100%; height: auto;">
+                <a data-phone-link><div style="position: absolute; left: 50%; top: 55%; width: 36%; height: 17%;"></div></a>
+                <a data-email-link><div style="position: absolute; left: 50%; top: 73%; width: 45%; height: 22%;"></div></a>
+              </div>
                 
             </div>
         </div>
@@ -843,7 +850,7 @@
 <!-- Optional JavaScript; choose one of the two! -->
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- Option 2: Separate Popper and Bootstrap JS -->
 <!--
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

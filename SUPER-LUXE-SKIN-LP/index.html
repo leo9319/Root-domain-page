@@ -7,6 +7,7 @@
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Jekyll v4.0.1">
 <title>SUPER-LUXE-SKIN-LP</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!-- Custom styles for this template -->
 <link href="css/layout.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
@@ -67,6 +68,8 @@
 
     window.onload = function () {
 
+      $('img[usemap]').rwdImageMaps();
+
       $('[data-brand-name]').text(brand)
       $('[data-website]').text(website)
 
@@ -78,7 +81,7 @@
         // email if it does not have anything inside
         // like this:
         // <a data-email-link></a>
-        if ($(el).html().trim() === ''){
+        if ($(el).html().trim() === '' && $(el).prop("tagName") !== 'AREA'){
           $(el).text(email)
         }
         el.setAttribute('href', 'mailto:' + email)
@@ -93,7 +96,8 @@
         // phone if it does not have anything inside
         // like this:
         // <a data-phone-link></a>
-        if ($(el).html().trim() === ''){
+        console.log('$(el).prop("tagName")', $(el).prop("tagName"))
+        if ($(el).html().trim() === '' && $(el).prop("tagName") !== 'AREA'){
           $(el).text(phone)
         }
         const numberPhone = phone.replaceAll(/[() -\.]/g,'')
@@ -116,8 +120,11 @@
     <div class="footcontent">
     <img src="img/topcontent.png" > 
     </div> 
-    <div class="contact">
-    	<a href="#"><img src="img/phoneemail.png"></a>
+    <div class="contact" style="position:relative;">
+
+    	<img src="img/phoneemail.png" style="width: 100%; height: auto;">
+      <a data-phone-link><div style="position: absolute; left: 9%; top: 52%; width: 37%; height: 20%; "></div></a>
+      <a data-email-link><div style="position: absolute; left: 9%; top: 74%; width: 66%; height: 25%;"></div></a>
     </div>
      
    
@@ -134,9 +141,15 @@
         <div class="moboright">
         <div class="mobocontent">
                  
-                 <div class="phone"><img src="img/mobophone.png"></div>
+                 <div class="phone" style="position:relative">
+
+                   <img src="img/mobophone.png" style="width: 100%; height: auto;">
+                   <a data-phone-link><div style="position: absolute; left: 12%; top: 50%; width: 30%; height: 16%;"></div></a>
+                   <a data-email-link><div style="position: absolute; left: 12%; top: 70%; width: 54%; height: 20%;"></div></a>
+
+                 </div>
                   <div class="footcontent"><img src="img/mobocontent.png"></div>
-                
+
             </div>
         </div>
         
@@ -838,7 +851,7 @@
 <!-- Optional JavaScript; choose one of the two! -->
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- Option 2: Separate Popper and Bootstrap JS -->
 <!--
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
