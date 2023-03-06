@@ -10,46 +10,111 @@
   <!-- Custom styles for this template -->
 <link href="css/layout.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+<style>
+  .mobotitle-wrapper {
+    font-family: myriad-pro;
+    padding: 0 0.75em;
+  }
+  .mobocontent-wrapper {
+    font-family: myriad-pro-light;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 1.5em;
+    font-size: 1.1em;
+  }
+  .phone-wrapper {
+    padding: 0 1em;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .phone-wrapper-item {
+    font-family: myriad-pro-semi-bold;
+    color: red;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 30px;
+    align-items: center;
+    gap: 2px;
+    
+  }
+
+  .desktop-title-wrapper {
+    font-family: myriad-pro-bold;
+    font-size: 2.6em;
+    padding: 0 1em;
+    margin-top: -2em;
+  }
+  .desktop-content-wrapper {
+    font-family: myriad-pro-light;
+    font-size: 2.2em;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 1.25em;
+  }
+  .desktop-phone-wrapper {
+    padding: 0 2.25em;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5em;
+  }
+  .desktop-phone-wrapper-item {
+    font-family: myriad-pro-semi-bold;
+    color: red;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 40px;
+    align-items: center;
+    gap: 2px;
+    font-size: 2em;
+    
+  }
+
+</style>
 </head>
 <body> 
-<div class="wrapper">
-    <div class="desktop">
-    <header>
-    	<a href="#" class="logo"><img src="img/logo.png" ></a>
-    </header>
-  <div class="right">
-  	<div class="title">
-   	  <img src="img/title.png">
+  <body>
+    <div class="wrapper">
+      <div class="desktop">
+      <header>
+        <a href="#" class="logo"><img src="img/logo.png" ></a>
+      </header>
+    <div class="right">
+      <div class="title">
+         <img src="img/title.png">
+      </div>
+     
+      <div class="contact">
+        <a href="#"><img src="img/phoneemail.png"></a>
+      </div>
+        <div class="footcontent">
+      <img src="img/topcontent.png" > 
+      </div> 
+     
+     
+      </div>
     </div>
-   
-    <div class="contact">
-    	<a href="#"><img src="img/phoneemail.png"></a>
-    </div>
-      <div class="footcontent">
-    <img src="img/topcontent.png" > 
-    </div> 
-   
-   
-    </div>
+    <div class="mobile">
+        <header>
+            <a href="#"><img src="img/logo.png"></a>
+          </header>
+        <div class="mobotitle">
+           <img src="img/mobotitle.png">
+          </div>
+          <div class="moboright">
+          <div class="mobocontent">
+                   
+                   <div class="phone"><img src="img/mobophone.png"></div>
+                    <div class="footcontent"><img src="img/mobocontent.png"></div>
+                  
+              </div>
+          </div>
+          
+      </div>
+      
   </div>
-  <div class="mobile">
-    	<header>
-        	<a href="#"><img src="img/logo.png"></a>
-        </header>
-    	<div class="mobotitle">
-   	  	<img src="img/mobotitle.png">
-      	</div>
-        <div class="moboright">
-        <div class="mobocontent">
-                 
-                 <div class="phone"><img src="img/mobophone.png"></div>
-                  <div class="footcontent"><img src="img/mobocontent.png"></div>
-                
-            </div>
-        </div>
-        
-    </div>
-    
-</div>
+  </body>
 </body>
 </html>
