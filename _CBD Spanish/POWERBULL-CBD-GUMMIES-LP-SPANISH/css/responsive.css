@@ -1,0 +1,138 @@
+
+
+@media (min-width:1200px) and (max-width:1440px) {
+.mainContentArea { 
+    background-position: 60% 0;
+}	
+body{    margin:0; padding:0;  background:url(../img/bg1.jpg) no-repeat right bottom; background-size: cover;height: 100vh;  }
+.leftside {
+    width: 100%;
+     padding: 0px;
+    margin: 5% 0 0 3%;
+}
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+	body{    margin:0; padding:0;  background:url(../img/bg2.jpg) no-repeat right bottom; background-size: cover;height: 100vh;  }
+
+	.mainContentArea{ width:100%; clear:both; overflow:none;   margin:0; padding:0;     }
+.leftside {
+    width: 100%;
+    max-width:100%;
+    padding: 0px;
+    margin: 0;
+}
+.hidemobo{ display:none;}
+.hidedesk{ display:block;}
+.leftside a.email img {
+    width: 49%;
+}
+}
+
+
+@media (min-width:768px) and (max-width:991px) {
+	body{    margin:0; padding:0;  background:url(../img/bg2.jpg) no-repeat right bottom; background-size: cover;height: 100vh;  }
+
+	.mainContentArea{ width:100%; clear:both; overflow:none;   margin:0; padding:0;     }.leftside {
+    width: 100%;
+    max-width:100%;
+    padding:25px 0 0px;
+    margin: 0;
+}
+.hidemobo{ display:none;}
+.hidedesk{ display:block;}
+.leftside a.email img {
+    width: 100%;
+}
+}
+
+@media (min-width:601px) and (max-width:767px) {
+	body{    margin:0; padding:0;  background:url(../img/bg2.jpg) no-repeat right bottom; background-size: cover;height: 100vh;  }
+
+	.mainContentArea{ width:100%; clear:both; overflow:none;   margin:0; padding:0;     }
+.leftside {
+    width: 100%;
+    max-width:100%;
+    padding: 25px 0 0px;
+    margin:0;
+}
+.hidemobo{ display:none;}
+.hidedesk{ display:block;}
+.leftside a.email img {
+    width: 49%;
+	margin-bottom:200px;
+}
+.title{ margin:0 0 0}
+.text{ margin:0 0 30px;}
+}
+
+
+@media (min-width:481px) and (max-width:600px) {
+	body{    margin:0; padding:0;  background:url(../img/bg2.jpg) no-repeat right bottom; background-size: cover;height: 100vh;  }
+
+	.mainContentArea{ width:100%; clear:both; overflow:none;   margin:0; padding:0;     }
+.leftside {
+    width: 100%;
+    max-width:100%;
+    padding: 25px 0 0px;
+    margin: 0;
+}
+.hidemobo{ display:none;}
+.hidedesk{ display:block;}
+.leftside a.email img {
+    width: 49%;
+	margin-bottom:200px;
+}
+.title{ margin:0 0 0}
+.text{ margin:0 0 30px;}
+}
+
+@media (min-width:380px) and (max-width:480px) {
+	body{    margin:0; padding:0;  background:url(../img/bg2.jpg) no-repeat right bottom; background-size: cover;height: 100vh;  }
+
+	.mainContentArea{ width:100%; clear:both; overflow:none;   margin:0; padding:0;     }
+.leftside {
+    width: 100%;
+    max-width:100%;
+    padding: 25px 0 0px;
+    margin: 0;
+}
+.hidemobo{ display:none;}
+.hidedesk{ display:block;}
+.leftside a.email img {
+    width: 49%;
+	margin-bottom:100px;
+}
+.title{ margin:0 0 0}
+.text{ margin:0 0 30px;}
+}
+
+@media (min-width:200px) and (max-width:379px) {
+	body{    margin:0; padding:0;  background:url(../img/bg2.jpg) no-repeat right bottom; background-size: cover;height: 100vh;  }
+
+	.mainContentArea{ width:100%; clear:both; overflow:none;   margin:0; padding:0;     }
+.leftside {
+    width: 100%;
+    max-width:100%;
+    padding: 25px 0 0px;
+    margin: 0;
+}
+.hidemobo{ display:none;}
+.hidedesk{ display:block;}
+.leftside a.email img {
+    width: 49%;
+	margin-bottom:100px;
+}
+.title{ margin:0 0 0}
+.text{ margin:0 0 30px;}
+}
+@media (min-width:200px) and (max-width:1199px) {
+ 
+header{ background:#ff0000}
+.mar25{ margin-bottom: 12px;}
+.logo img {
+  display: block;
+  margin: .1% auto;
+  width: 120px;
+}
+}

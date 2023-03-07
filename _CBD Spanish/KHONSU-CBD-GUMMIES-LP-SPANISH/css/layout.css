@@ -1,0 +1,27 @@
+body{    margin:0; padding:0;  background:url(../img/bg1.jpg) no-repeat  100%  8px; background-size: cover; height: 100vh;  }
+header{ background:#ff0000; text-align:center; }
+.mainContentArea{ width:100%; clear:both; overflow:hidden;   margin:0; padding:0; height:100%;  }
+.leftside {
+    width: 100%;
+    max-width: 56%;
+    padding: 0px;
+    margin: 3% 0 0 5%;
+}
+.title{ margin:0 0 0}
+.title img {
+    width: 100%;
+}
+.text{ margin:0 0 0;}
+.text img {
+    width:100%;
+}
+.leftside a{ display:block; margin:0 0 0;}
+.leftside a.phone img {
+    width: 100%;
+}
+.leftside a.email img {
+    width: 100%
+}
+
+.inner{ }
+.hidedesk{ display:none;}
