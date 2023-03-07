@@ -1,0 +1,20 @@
+@media (min-width:900px) and (max-width:1440px) {
+body{height: 100vh;}
+.contentarea{ height:100%;}
+}
+
+@media (min-width:200px) and (max-width:1199px) {
+.leftside{ width:100%; max-width:100%; margin:3% 2%;}
+body{width: 100%;background: url(../img/banner2.jpg) no-repeat bottom right; background-size:100%;padding: 0 0 20%;height: 100vh; }
+.contentarea {width: 100%;background: none; background-size:100%;padding: 0 0 25%;height: 100%;overflow: inherit;}
+.title {width: 85%;margin:0 0 4%px}
+.content{width:96%; margin:0 0  }
+.hidemobo{ display:none;}
+.hidedesk{ display:block;}
+.email {width: 80%;padding:0 0 0 0;}
+.logo img{ width:auto; height:50px;}
+.phone {width: 75%;margin: 0;}
+}
+
+
+ 
