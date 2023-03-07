@@ -1,126 +1,269 @@
-
-
-@media (min-width:1200px) and (max-width:1440px) {
-.mainContentArea { 
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .mainContentArea {
     background-position: 60% 0;
-}	
-body{    margin:0; padding:0;  background:url(../img/bg1.jpg) no-repeat right bottom; background-size: cover;height: 100vh;  }
-.leftside {
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/bg1.jpg) no-repeat right bottom;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .leftside {
     width: 100%;
-     padding: 0px;
+    padding: 25px 0 0px 10px;
     margin: 5% 0 0 3%;
-}
+  }
 }
 
-@media (min-width:992px) and (max-width:1199px) {
-	.mainContentArea{ width:100%; clear:both; overflow:none; background:url(../img/bg2.jpg) no-repeat bottom right;  margin:0; padding:0;   background-size:950px;   }
-.leftside {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mainContentArea {
     width: 100%;
-    max-width:100%;
-    padding: 0px;
+    clear: both;
+    overflow: none;
+    background: url(../img/bg2.jpg) no-repeat bottom right;
     margin: 0;
-}
-.hidemobo{ display:none;}
-.hidedesk{ display:block;}
-.leftside a.email img {
-    width: 49%;
-}
-}
+    padding: 0;
+    background-size: 950px;
+  }
 
-
-@media (min-width:768px) and (max-width:991px) {
-	.mainContentArea{ width:100%; clear:both; overflow:none; background:url(../img/bg2.jpg) no-repeat bottom right;  margin:0; padding:0;  background-size:768px;   }
-.leftside {
+  .leftside {
     width: 100%;
-    max-width:100%;
-    padding:25px 0 0px;
+    max-width: 100%;
+    padding: 25px 0 0px 10px;
     margin: 0;
-}
-.hidemobo{ display:none;}
-.hidedesk{ display:block;}
-.leftside a.email img {
-    width: 100%;
-}
-}
+  }
 
-@media (min-width:601px) and (max-width:767px) {
-	body{ height:100vh}
-	.mainContentArea{ width:100%; clear:both; overflow:none; background:url(../img/bg2.jpg) no-repeat bottom right;  margin:0; padding:0;  background-size:80%;   }
-.leftside {
-    width: 100%;
-    max-width:100%;
-    padding: 25px 0 0px;
-    margin:0;
-}
-.hidemobo{ display:none;}
-.hidedesk{ display:block;}
-.leftside a.email img {
+  .hidemobo {
+    display: none;
+  }
+
+  .hidedesk {
+    display: block;
+  }
+
+  .leftside a.email img {
     width: 49%;
-	margin-bottom:200px;
-}
-.title{ margin:0 0 0}
-.text{ margin:0 0 30px;}
+  }
 }
 
 
-@media (min-width:481px) and (max-width:600px) {
-	body{ height:100vh}
-	.mainContentArea{ width:100%; clear:both; overflow:none; background:url(../img/bg2.jpg) no-repeat bottom right;  margin:0; padding:0;  background-size:90%;   }
-.leftside {
+@media (min-width: 768px) and (max-width: 991px) {
+  .mainContentArea {
     width: 100%;
-    max-width:100%;
-    padding: 25px 0 0px;
+    clear: both;
+    overflow: none;
+    background: url(../img/bg2.jpg) no-repeat bottom right;
     margin: 0;
-}
-.hidemobo{ display:none;}
-.hidedesk{ display:block;}
-.leftside a.email img {
-    width: 49%;
-	margin-bottom:200px;
-}
-.title{ margin:0 0 0}
-.text{ margin:0 0 30px;}
-}
+    padding: 0;
+    background-size: 768px;
+  }
 
-@media (min-width:380px) and (max-width:480px) {
-	body{ height:100vh}
-	.mainContentArea{ width:100%; clear:both; overflow:none; background:url(../img/bg2.jpg) no-repeat bottom right;  margin:0; padding:0;  background-size:95%;   }
-.leftside {
+  .leftside {
     width: 100%;
-    max-width:100%;
-    padding: 25px 0 0px;
+    max-width: 100%;
+    padding: 25px 0 0px 10px;
     margin: 0;
-}
-.hidemobo{ display:none;}
-.hidedesk{ display:block;}
-.leftside a.email img {
-    width: 49%;
-	margin-bottom:100px;
-}
-.title{ margin:0 0 0}
-.text{ margin:0 0 30px;}
-}
+  }
 
-@media (min-width:200px) and (max-width:379px) {
-	body{ height:100vh}
-	.mainContentArea{ width:100%; clear:both; overflow:none; background:url(../img/bg2.jpg) no-repeat bottom right;  margin:0; padding:0;   background-size:95%;   }
-.leftside {
+  .hidemobo {
+    display: none;
+  }
+
+  .hidedesk {
+    display: block;
+  }
+
+  .leftside a.email img {
     width: 100%;
-    max-width:100%;
-    padding: 25px 0 0px;
-    margin: 0;
+  }
 }
-.hidemobo{ display:none;}
-.hidedesk{ display:block;}
-.leftside a.email img {
-    width: 49%;
-	margin-bottom:100px;
-}
-.title{ margin:0 0 0}
-.text{ margin:0 0 30px;}
-}
-@media (min-width:200px) and (max-width:1199px) {
-body{ background:#fff;}
 
-.mar25{ margin-bottom: 12px;}
+@media (min-width: 601px) and (max-width: 767px) {
+  body {
+    height: 100vh
+  }
+
+  .mainContentArea {
+    width: 100%;
+    clear: both;
+    overflow: none;
+    background: url(../img/bg2.jpg) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+    background-size: 80%;
+  }
+
+  .leftside {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 0 0px 10px;
+    margin: 0;
+  }
+
+  .hidemobo {
+    display: none;
+  }
+
+  .hidedesk {
+    display: block;
+  }
+
+  .leftside a.email img {
+    width: 49%;
+    margin-bottom: 200px;
+  }
+
+  .title {
+    margin: 0 0 0
+  }
+
+  .text {
+    margin: 0 0 30px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 600px) {
+  body {
+    height: 100vh
+  }
+
+  .mainContentArea {
+    width: 100%;
+    clear: both;
+    overflow: none;
+    background: url(../img/bg2.jpg) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+    background-size: 90%;
+  }
+
+  .leftside {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 0 0px 10px;
+    margin: 0;
+  }
+
+  .hidemobo {
+    display: none;
+  }
+
+  .hidedesk {
+    display: block;
+  }
+
+  .leftside a.email img {
+    width: 49%;
+    margin-bottom: 200px;
+  }
+
+  .title {
+    margin: 0 0 0
+  }
+
+  .text {
+    margin: 0 0 30px;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 480px) {
+  body {
+    height: 100vh
+  }
+
+  .mainContentArea {
+    width: 100%;
+    clear: both;
+    overflow: none;
+    background: url(../img/bg2.jpg) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+    background-size: 95%;
+  }
+
+  .leftside {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 0 0px 10px;
+    margin: 0;
+  }
+
+  .hidemobo {
+    display: none;
+  }
+
+  .hidedesk {
+    display: block;
+  }
+
+  .leftside a.email img {
+    width: 49%;
+    margin-bottom: 100px;
+  }
+
+  .title {
+    margin: 0 0 0
+  }
+
+  .text {
+    margin: 0 0 30px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 379px) {
+  body {
+    height: 100vh
+  }
+
+  .mainContentArea {
+    width: 100%;
+    clear: both;
+    overflow: none;
+    background: url(../img/bg2.jpg) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+    background-size: 95%;
+  }
+
+  .leftside {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 0 0px 10px;
+    margin: 0;
+  }
+
+  .hidemobo {
+    display: none;
+  }
+
+  .hidedesk {
+    display: block;
+  }
+
+  .leftside a.email img {
+    width: 49%;
+    margin-bottom: 100px;
+  }
+
+  .title {
+    margin: 0 0 0
+  }
+
+  .text {
+    margin: 0 0 30px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 1199px) {
+  body {
+    background: #fff;
+  }
+
+  .mar25 {
+    margin-bottom: 12px;
+  }
 }
