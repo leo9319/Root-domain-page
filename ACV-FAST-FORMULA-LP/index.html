@@ -7,12 +7,13 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
     <title>ACV-FAST-FORMULA-LP</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <!-- Custom styles for this template -->
     <link href="css/layout.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/custom-style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
     <style>
         .mobotitle-wrapper {
             font-family: myriad-pro;
@@ -71,6 +72,48 @@
         .footer {
             padding-left: 21px;
             margin-top: 190px;
+        }
+    </style>
+
+    <style>
+        .modal-container {
+            color: #ccc;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            padding: 10px 0;
+            text-align: center;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1));
+        }
+
+        .modal-container a {
+            color: #263b88;
+            text-shadow: 1px 0px 1px #ddd;
+            font-size: 13px;
+        }
+
+        .modal-content {
+            margin: 30px 5px 0 5px;
+        }
+
+        @media (max-width: 575px) {
+            .modal-container {
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
+
+        .modal-body {
+            border: 1px solid black;
+            margin: 15px;
+            height: 80vh;
+            font-size: 14px;
+            overflow-y: auto;
+        }
+
+        .modal-dialog {
+            overflow-y: initial !important
         }
     </style>
 </head>
@@ -293,7 +336,7 @@
             </div>
         </div>
         <div data-dismiss="modal"  style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
-            <div style="display: flex; flex-flow: column; padding-top: 0.5em;" >
+            <div style="display: flex; flex-flow: column; padding-top: 0.7em;" >
                 <img src="img/exit_icon_white.png"
                      style="width: 50%; margin: 0 auto;"
                 >
@@ -457,7 +500,7 @@
             </div>
         </div>
         <div data-dismiss="modal"  style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
-            <div style="display: flex; flex-flow: column; padding-top: 0.5em;" >
+            <div style="display: flex; flex-flow: column; padding-top: 0.7em;" >
                 <img src="img/exit_icon_white.png"
                      style="width: 50%; margin: 0 auto;"
                 >
@@ -484,7 +527,7 @@
             </div>
         </div>
         <div data-dismiss="modal"  style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
-            <div style="display: flex; flex-flow: column; padding-top: 0.5em;" >
+            <div style="display: flex; flex-flow: column; padding-top: 0.7em;" >
                 <img src="img/exit_icon_white.png"
                      style="width: 50%; margin: 0 auto;"
                 >
@@ -495,6 +538,6 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

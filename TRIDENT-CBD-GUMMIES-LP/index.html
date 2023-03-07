@@ -9,7 +9,7 @@
 <title>TRIDENT-CBD-GUMMIES-LP</title>
   <!-- Custom styles for this template -->
 
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 <link href="css/layout.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet"> 
 <link href="css/fonts.css" rel="stylesheet"> 
@@ -18,13 +18,14 @@
 <style>
   .mobotitle-wrapper {
     font-family: myriad-pro;
-    padding: 0 0.75em;
+    padding: 0 0em;
   }
   .mobocontent-wrapper {
-    font-family: myriad-pro-light;
+    font-family: myriad-pro;
+    font-size:14px;
     display: flex;
     flex-flow: column nowrap;
-    padding: 0 2.2em;
+    padding: 0 2em;
   }
   .phone-wrapper {
     padding: 0 1em;
@@ -39,21 +40,19 @@
     height: 30px;
     align-items: center;
     gap: 2px;
-    
   }
 
   .desktop-title-wrapper {
     font-family: myriad-pro;
     font-size: 30px;
     padding: 0 0.75em;
-    margin-top: -2em;
   }
   .desktop-content-wrapper {
     font-family: myriad-pro-light;
     font-size: 1.7em;
     display: flex;
     flex-flow: column nowrap;
-    margin-left: 1em;
+    margin-left: 1.5em;
   }
   .desktop-phone-wrapper {
     padding: 0 1.3em;
@@ -70,42 +69,35 @@
     align-items: center;
     gap: 2px;
     font-size: 1.75em;
-    
   }
 
 </style>
   <style>
-    .close-button {
-      position: absolute;
-      color: white;
-      background: #000;
-      border-radius: 30px;
-      top: -10px;
-      right: -10px;
-    }
-
     .modal-container {
       color: #ccc;
       position: fixed;
       width: 100%;
       bottom: 0;
       left: 0;
-      padding: 10px;
-      background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 255, 255, 1));
+      padding: 10px 0;
+      text-align: center;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1));
     }
 
     .modal-container a {
-      color: #0087ff;
-      font-size: 14px;
+      color: #ff0000;
+      text-shadow: 1px 0px 1px #ddd;
+      font-size: 13px;
+    }
+
+    .modal-content {
+      margin: 30px 5px 0 5px;
     }
 
     @media (max-width: 575px) {
-      body {
-        background-position: 100%;
-      }
-
       .modal-container {
-        position: absolute;
+        text-align: center;
+        padding: 10px 0;
       }
     }
 
@@ -202,7 +194,7 @@
         	<a href="#"><img src="img/logo.png"></a>
         </header>
     	<div class="mobotitle">
-        <div class="mobotitle-wrapper" style="color: red; font-size: 21px; margin-top: -1em;">
+        <div class="mobotitle-wrapper" style="color: red; font-size: 21px; ">
           <img src="img/mobotitle.png">
         </div>
       	</div>
@@ -218,11 +210,11 @@
              	<div class="phone">
                 <div class="phone-wrapper">
                   <div class="phone-wrapper-item">
-                    <img src="img/phone.png" style="width: 30px; margin-left: auto;">
+                    <img src="img/phone.png" style="width: 30px; margin-left:140px; ">
                     <a data-phone-link style="color: red; text-decoration: none; margin-right: 2.75em;"></a>
                   </div>
                   <div class="phone-wrapper-item">
-                    <img src="img/email.png" style="width: 30px; margin-left: auto;">
+                    <img src="img/email.png" style="width: 30px;margin-left:140px;">
                     <a data-email-link style="color: red;"><span data->care@cbdtrident.com</span></a>
                   </div>
                 </div>
@@ -469,7 +461,7 @@
         information contact our customer service team at <span data-email="email-placeholder"></span>.
       </div>
       <div data-dismiss="modal"  style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
-        <div style="display: flex; flex-flow: column; padding-top: 0.5em;" >
+        <div style="display: flex; flex-flow: column; padding-top: 0.7em;" >
           <img src="img/exit_icon_white.png"
                style="width: 50%; margin: 0 auto;"
           >
@@ -887,7 +879,7 @@
       </div>
 
       <div data-dismiss="modal"  style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
-        <div style="display: flex; flex-flow: column; padding-top: 0.5em;" >
+        <div style="display: flex; flex-flow: column; padding-top: 0.7em;" >
           <img src="img/exit_icon_white.png"
                style="width: 50%; margin: 0 auto;"
           >
@@ -915,7 +907,7 @@
         </p>
       </div>
       <div data-dismiss="modal"  style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
-        <div style="display: flex; flex-flow: column; padding-top: 0.5em;" >
+        <div style="display: flex; flex-flow: column; padding-top: 0.7em;" >
           <img src="img/exit_icon_white.png"
                style="width: 50%; margin: 0 auto;"
           >

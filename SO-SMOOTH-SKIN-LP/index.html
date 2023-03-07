@@ -8,48 +8,38 @@
   <meta name="generator" content="Jekyll v4.0.1">
 
   <title>SO-SMOOTH-SKIN-LP</title>
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <!-- Custom styles for this template -->
   <link href="css/layout.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
   <link href="css/fonts.css" rel="stylesheet">
-  <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <style>
-    .close-button {
-      position: absolute;
-      color: white;
-      background: #000;
-      border-radius: 30px;
-      top: -10px;
-      right: -10px;
-    }
-
     .modal-container {
       color: #ccc;
       position: fixed;
       width: 100%;
       bottom: 0;
       left: 0;
-      padding: 10px;
-      background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 255, 255, 1));
+      padding: 10px 0;
+      text-align: center;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
     }
 
     .modal-container a {
-      color: #0087ff;
-      font-size: 14px;
+      color: #263b88;
+      font-size: 13px;
     }
 
     @media (max-width: 575px) {
-      body {
-        background-position: 100%;
-      }
-
       .modal-container {
-        position: absolute;
+        text-align:center;
+        padding: 10px 0;
       }
     }
 
+    .modal-content {
+      margin: 30px 5px 0 5px;
+    }
     .modal-body {
       border: 1px solid black;
       margin: 15px;
@@ -108,82 +98,6 @@
 
   <style>
 
-    .mobotitle-wrapper {
-      font-family: myriad-pro-bold;
-      padding: 0 1.1em;
-    }
-
-    .mobocontent-wrapper {
-      font-family: myriad-pro;
-      display: flex;
-      flex-flow: column nowrap;
-      padding: 0 1.5em;
-    }
-
-    .phone-wrapper {
-      padding: 0 1em;
-      display: flex;
-      flex-flow: column nowrap;
-    }
-
-    .phone-wrapper-item {
-      font-family: myriad-pro-semi-bold;
-      color: red;
-      display: flex;
-      flex-flow: row nowrap;
-      line-height: 50px;
-      align-items: center;
-      gap: 2px;
-    }
-
-    .phone-wrapper-item a {
-      color: #000;
-    }
-
-    .desktop-title-wrapper {
-      font-family: myriad-pro-bold;
-      font-size: 30px;
-      padding: 0 0.4em;
-      /*margin-top: -2em;*/
-    }
-
-
-    .desktop-content-wrapper {
-      font-family: myriad-pro;
-      font-size: 2em;
-      display: flex;
-      color: #000;
-      flex-flow: column nowrap;
-      padding: 0 0.4em;
-    }
-
-    .mobile-content-wrapper {
-      font-family: myriad-pro;
-      padding-left: 25px;
-      font-size: 1.2em;
-    }
-
-
-    .desktop-phone-wrapper {
-      padding: 0 0.4em;
-      display: flex;
-      flex-flow: column nowrap;
-      gap: 0.3em;
-    }
-
-    .desktop-phone-wrapper-item {
-      font-family: myriad-pro-semi-bold;
-      color: red;
-      display: flex;
-      flex-flow: row nowrap;
-      height: 40px;
-      align-items: center;
-      gap: 2px;
-      font-size: 1.5em;
-
-    }
-
-
   </style>
 </head>
 <body>
@@ -195,35 +109,20 @@
       </header>
 
       <div class="right">
-
-
         <div class="title">
-          <div class="desktop-title-wrapper" style="color: darkblue;">
-            <h2 style="font-size: 2em;font-weight:bold;">Thank you for visiting <br> <span data-brand-name></span>!</h2>
-          </div>
+          <img src="img/title.png">
+        </div>
+
+
+        <div class="phone"  style="position:relative">
+          <img src="img/emailphone.png" style="width: 100%; height: auto;">
+          <a data-phone-link><div style="position: absolute; left: 10%; top: 50%; width: 36%; height: 16%;"></div></a>
+          <a data-email-link><div style="position: absolute; left: 10%; top: 70%; width: 59%; height: 20%;"></div></a>
         </div>
         <div class="footcontent">
-          <div class="desktop-content-wrapper">
-            <p style="margin-top: 0em;">
-              Our customer service team is available 24/7 <br>
-              via email and phone:
-            </p>
-
-            <div class="phone-wrapper-item">
-              <img src="img/phone.png" style="width: 40px;">
-              <a data-phone-link></a>
-            </div>
-            <div class="phone-wrapper-item">
-              <img src="img/email.png" style="width: 40px; ">
-              <a data-email-link></a>
-            </div>
-
-            <p  style="padding-top:20px;">Our wonderful customer service team is readily<br> available to help
-              answer any questions you may <br> have. Don't wait to reach out to them.
-            </p>
-
-          </div>
+          <img src="img/topcontent.png">
         </div>
+
 
       </div>
     </div>
@@ -231,48 +130,16 @@
       <header>
         <a href="#"><img src="img/logo.jpg"></a>
       </header>
+      <div class="mobotitle">
+        <img src="img/mobotitle.png">
+      </div>
+      <div class="footcontent" style="position:relative">
+        <img src="img/mobocontent.png" style="width: 100%; height: auto;">
+        <a data-phone-link><div style="position: absolute; left: 40%; top: 25%; width: 36%; height: 13%;"></div></a>
+        <a data-email-link><div style="position: absolute; left: 40%; top: 39%; width: 52%; height: 13%;"></div></a>
+      </div>
+      <div class="moboright">
 
-
-      <div class="footcontent">
-
-        <div class="mobile-content-wrapper" style="font-size:16px;">
-          <div class="mobile-row">
-            <div class="mobile-column">
-
-            </div>
-            <div class="mobile-column">
-            <p class="customer-service-team">
-              <div class="mobile-title-wrapper" style="color: darkblue;">
-                <h2 style="font-size: 1em;font-weight:bold;">Thank you for visiting <br> <span data-brand-name></span>!</h2>
-              </div>
-              Our customer service team is available 24/7<br />
-              via email and phone:
-            </p>
-            </div>
-          </div>
-
-
-          <div style="display: flex;">
-            <div style="flex:55%">
-            </div>
-            <div  style="flex:45%;padding-right:10px;font-size:16px;padding-top:20px;">
-
-              <div class="phone-wrapper-item" style="line-height:25px;">
-                <img src="img/phone.png" style="width: 20px;">
-                <a data-phone-link></a>
-              </div>
-              <div class="phone-wrapper-item" style="line-height:25px;">
-                <img src="img/email.png" style="width: 20px; ">
-                <a data-email-link></a>
-              </div>
-
-              <br />
-              Our wonderful customer service team is readily available to help
-              answer any questions you may have. Don't wait to reach out to them.
-            </div>
-          </div>
-
-        </div>
       </div>
 
     </div>
@@ -504,7 +371,7 @@
       </div>
       <div data-dismiss="modal"
            style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
-        <div style="display: flex; flex-flow: column; padding-top: 0.5em;">
+        <div style="display: flex; flex-flow: column; padding-top: 0.7em;">
           <img src="img/exit_icon_white.png"
                style="width: 50%; margin: 0 auto;"
           >
@@ -923,7 +790,7 @@
 
       <div data-dismiss="modal"
            style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
-        <div style="display: flex; flex-flow: column; padding-top: 0.5em;">
+        <div style="display: flex; flex-flow: column; padding-top: 0.7em;">
           <img src="img/exit_icon_white.png"
                style="width: 50%; margin: 0 auto;"
           >
@@ -952,7 +819,7 @@
       </div>
       <div data-dismiss="modal"
            style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
-        <div style="display: flex; flex-flow: column; padding-top: 0.5em;">
+        <div style="display: flex; flex-flow: column; padding-top: 0.7em;">
           <img src="img/exit_icon_white.png"
                style="width: 50%; margin: 0 auto;"
           >
