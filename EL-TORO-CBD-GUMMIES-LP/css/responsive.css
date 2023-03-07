@@ -15,7 +15,7 @@
 
 @media (min-width:200px) and (max-width:1199px) {
 .desktop{ display:none;}
-body{ background: url(../img/mobobg.png) no-repeat 0 50px; background-size:100%; height:100vh; }
+body{ background: url(../img/mobobg.png) no-repeat 100%; background-size:100%; height:100vh; }
 
 .mobile{ width:100%; clear:both; display:block;}
 header{ background:#ff0000;  text-align:center; padding:0;}

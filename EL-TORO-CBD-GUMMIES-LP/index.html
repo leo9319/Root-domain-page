@@ -7,6 +7,7 @@
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Jekyll v4.0.1">
 <title>EL-TORO-CBD-GUMMIES-LP</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <!-- Custom styles for this template -->
 <link href="css/layout.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet"> 
@@ -74,11 +75,93 @@
 
 </style>
 
+  <style>
+    .modal-container {
+      color: #ccc;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      padding: 10px 0;
+      text-align: center;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+    }
+
+    .modal-container a {
+      color: #ff0000;
+      font-size: 13px;
+    }
+
+    @media (max-width: 575px) {
+      .modal-container {
+        text-align:center;
+        padding: 10px 0;
+      }
+    }
+
+    .modal-content {
+      margin: 30px 5px 0 5px;
+    }
+    .modal-body {
+      border: 1px solid black;
+      margin: 15px;
+      height: 80vh;
+      font-size: 14px;
+      overflow-y: auto;
+    }
+
+    .modal-dialog {
+      overflow-y: initial !important
+    }
+  </style>
+  <script>
+    const brand = 'EL TORO CBD'
+    const website = 'eltorocbd.com'
+    const email = 'care@eltorocbd.com'
+    const phone = '(866) 986-6594'
+
+    window.onload = function () {
+
+      $('[data-brand-name]').text(brand)
+      $('[data-website]').text(website)
+
+      $('[data-email]').text(email)
+      $('[data-email-link]').each((index, el) => {
+        // if the link has image inside
+        // html() won't be empty,
+        // we only populate the text() with
+        // email if it does not have anything inside
+        // like this:
+        // <a data-email-link></a>
+        if ($(el).html().trim() === '') {
+          $(el).text(email)
+        }
+        el.setAttribute('href', 'mailto:' + email)
+      })
+
+      $('[data-phone]').text(phone)
+      $('[data-phone-link]').each((index, el) => {
+
+        // if the link has image inside
+        // html() won't be empty,
+        // we only populate the text() with
+        // phone if it does not have anything inside
+        // like this:
+        // <a data-phone-link></a>
+        if ($(el).html().trim() === '') {
+          $(el).text(phone)
+        }
+        const numberPhone = phone.replaceAll(/[() -\.]/g, '')
+        el.setAttribute('href', 'tel:' + numberPhone)
+      })
+    }
+
+  </script>
 
 
 </head>
 <body> 
-<div class="wrapper desktop">
+<div class="wrapper ">
     <div class="desktop">
     <header>
     	<a href="#" class="logo"><img src="img/logo.jpg" ></a>
@@ -101,11 +184,11 @@
         <div class="desktop-phone-wrapper">
           <div class="desktop-phone-wrapper-item">
             <img src="img/phone.png" style="width: 50px;">
-            <a href=tel:8669866594 style="color: red; text-decoration: none;"><span>(866) 986-6594</span></a>
+            <a data-phone-link style="color: red; text-decoration: none;"><span>(866) 986-6594</span></a>
           </div>
           <div class="desktop-phone-wrapper-item">
             <img src="img/email.png" style="width: 50px;">
-            <a href=mailto:care@eltorocbd.com style="color: red;"><span>care@eltorocbd.com</span></a>
+            <a data-email-link style="color: red;"><span>care@eltorocbd.com</span></a>
           </div>
         </div>
       </div>  
@@ -113,7 +196,6 @@
     
     
     </div>
-  </div>
   <div class="mobile">
     <header>
         <a href="#"><img src="img/logo.jpg"></a>
@@ -135,11 +217,11 @@
                   <div class="phone-wrapper">
                     <div class="phone-wrapper-item">
                       <img src="img/phone.png" style="width: 30px;">
-                      <a href=tel:8669866594 style="color: red; text-decoration: none;"><span>(866) 986-6594</span></a>
+                      <a data-phone-link style="color: red; text-decoration: none;"><span>(866) 986-6594</span></a>
                     </div>
                     <div class="phone-wrapper-item">
                       <img src="img/email.png" style="width: 30px;">
-                      <a href=mailto:care@eltorocbd.com style="color: red;"><span>care@eltorocbd.com</span></a>
+                      <a data-email-link style="color: red;"><span>care@eltorocbd.com</span></a>
                     </div>
                   </div>
                 </div>                
@@ -147,9 +229,9 @@
       </div>
       
   </div>
-    
-</div>
 
+
+</div>
 
 
 <div class="modal-container" style="">
@@ -385,7 +467,7 @@
         information contact our customer service team at <span data-email="email-placeholder"></span>.
       </div>
       <div data-dismiss="modal"  style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
-        <div style="display: flex; flex-flow: column; padding-top: 0.5em;" >
+        <div style="display: flex; flex-flow: column; padding-top: 0.7em;" >
           <img src="img/exit_icon_white.png"
                style="width: 50%; margin: 0 auto;"
           >
@@ -803,7 +885,7 @@
       </div>
 
       <div data-dismiss="modal"  style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
-        <div style="display: flex; flex-flow: column; padding-top: 0.5em;" >
+        <div style="display: flex; flex-flow: column; padding-top: 0.7em;" >
           <img src="img/exit_icon_white.png"
                style="width: 50%; margin: 0 auto;"
           >
@@ -831,7 +913,7 @@
         </p>
       </div>
       <div data-dismiss="modal"  style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
-        <div style="display: flex; flex-flow: column; padding-top: 0.5em;" >
+        <div style="display: flex; flex-flow: column; padding-top: 0.7em;" >
           <img src="img/exit_icon_white.png"
                style="width: 50%; margin: 0 auto;"
           >
