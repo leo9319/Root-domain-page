@@ -1,33 +1,95 @@
-@media (min-width:900px) and (max-width:1441px) {
-	body{ height:100vh} 
-	.right {
-  float: right;
-  width: 48%;
-  padding:3% 3% 3% 0;
-  margin: 0;
+@media (min-width: 900px) and (max-width: 1441px) {
+  body {
+    height: 100vh
+  }
+
+  .right {
+    float: right;
+    width: 48%;
+    padding: 3% 3% 3% 0;
+    margin: 0;
+  }
 }
- }
- @media (min-width:1200px) and (max-width:1440px) {
- 
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+
 }
 
-@media (min-width:200px) and (max-width:1199px) {
-.desktop{ display:none;}
-body{ background: url(../img/mobobg.png) no-repeat bottom left; background-size:100%; height:100vh; }
+@media (min-width: 200px) and (max-width: 1199px) {
+  .desktop {
+    display: none;
+  }
 
-.mobile{ width:100%; clear:both; display:block; }
-header{ background:#263b88; border-top:8px solid #000; text-align:center; padding:0;}
-header img{ width:auto; height:50px;}
-.mobotitle {width: 100%;padding:2% 0% 0;margin: 0;}
-.mobotitle img{ display:block; width:100%;}
-.moboright{ width:100%; float:right; margin-bottom:40%; padding:  0;}
+  body {
+    background: url(../img/mobobg.png) no-repeat bottom left;
+    background-size: 100%;
+    height: 100vh;
+  }
 
-.mobotitme{ width:100%;}
-.mobotitme img{ width:100%;}
+  .mobile {
+    width: 100%;
+    clear: both;
+    display: block;
+  }
 
-.mobocontact{ width:100%; margin:2% 0 0 }
-.mobocontact img{ width:100%;}
+  header {
+    background: #263b88;
+    border-top: 8px solid #000;
+    text-align: center;
+    padding: 0;
+  }
 
-.moboemail{ width:100%; margin:0 0 2%;}
-.moboemail img{ width:100%;}
-.footcontent {width: 100%;margin: 0;}
+  header img {
+    width: auto;
+    height: 50px;
+  }
+
+  .mobotitle {
+    width: 100%;
+    padding: 2% 0% 0;
+    margin: 0;
+  }
+
+  .mobotitle img {
+    display: block;
+    width: 100%;
+  }
+
+  .moboright {
+    width: 100%;
+    float: right;
+    margin-bottom: 40%;
+    padding: 0;
+  }
+
+  .mobotitme {
+    width: 100%;
+  }
+
+  .mobotitme img {
+    width: 100%;
+  }
+
+  .mobocontact {
+    width: 100%;
+    margin: 2% 0 0
+  }
+
+  .mobocontact img {
+    width: 100%;
+  }
+
+  .moboemail {
+    width: 100%;
+    margin: 0 0 2%;
+  }
+
+  .moboemail img {
+    width: 100%;
+  }
+
+  .footcontent {
+    width: 100%;
+    margin: 0;
+  }
+}

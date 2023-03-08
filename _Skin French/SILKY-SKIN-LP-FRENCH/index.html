@@ -7,9 +7,93 @@
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Jekyll v4.0.1">
 <title>SILKY-SKIN-LP-FRENCH</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!-- Custom styles for this template -->
 <link href="css/layout.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"> 
+<link href="css/responsive.css" rel="stylesheet">
+  <style>
+    .modal-container {
+      color: #ccc;
+      position: fixed;
+      width: 100%;
+      bottom: -2px;
+      left: 0;
+      padding: 10px 0 12px 0;
+      text-align: center;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+    }
+
+    .modal-container a {
+      color: #263b88;
+      font-size: 13px;
+    }
+
+    @media (max-width: 575px) {
+      .modal-container {
+        text-align: center;
+        padding: 10px 0;
+      }
+    }
+
+    .modal-content {
+      margin: 30px 5px 0 5px;
+    }
+
+    .modal-body {
+      border: 1px solid black;
+      margin: 15px;
+      height: 80vh;
+      font-size: 14px;
+      overflow-y: auto;
+    }
+
+    .modal-dialog {
+      overflow-y: initial !important
+    }
+  </style>
+  <script>
+    const brand = 'SILKY SKIN'
+    const website = 'get-silky-skin.com'
+    const email = 'care@get-silky-skin.com'
+    const phone = '(833) 274-5104'
+
+    window.onload = function () {
+
+      $('[data-brand-name]').text(brand)
+      $('[data-website]').text(website)
+
+      $('[data-email]').text(email)
+      $('[data-email-link]').each((index, el) => {
+        // if the link has image inside
+        // html() won't be empty,
+        // we only populate the text() with
+        // email if it does not have anything inside
+        // like this:
+        // <a data-email-link></a>
+        if ($(el).html().trim() === '') {
+          $(el).text(email)
+        }
+        el.setAttribute('href', 'mailto:' + email)
+      })
+
+      $('[data-phone]').text(phone)
+      $('[data-phone-link]').each((index, el) => {
+
+        // if the link has image inside
+        // html() won't be empty,
+        // we only populate the text() with
+        // phone if it does not have anything inside
+        // like this:
+        // <a data-phone-link></a>
+        if ($(el).html().trim() === '') {
+          $(el).text(phone)
+        }
+        const numberPhone = phone.replaceAll(/[() -\.]/g, '')
+        el.setAttribute('href', 'tel:' + numberPhone)
+      })
+    }
+
+  </script>
 </head>
 <body> 
 <div class="wrapper">
@@ -32,8 +116,8 @@
     <div class="phone">
     	
         <img src="img/emailphone.png"> 
-        <a href="tel:(833) 274-5104"><img src="img/d-phone.png"></a>
-    	<a href="mailto:care@get-silky-skin.com"><img src="img/d-email.png"></a>
+        <a data-phone-link><img src="img/d-phone.png"></a>
+    	<a data-email-link><img src="img/d-email.png"></a>
     </div>
     
     
@@ -53,8 +137,8 @@
         <div class="mobocontent">
         	
              	<div class="phone"><img src="img/emailmobophone.png">
-                 <a href="tel:(833) 274-5104"><img src="img/m-phone.png"></a>
-    	         <a href="mailto:care@get-silky-skin.com"><img src="img/m-email.png"></a>
+                 <a data-phone-link><img src="img/m-phone.png"></a>
+    	         <a data-email-link><img src="img/m-email.png"></a>
                 </div>
                 
             </div>
@@ -63,5 +147,850 @@
     </div>
     
 </div>
+
+
+<style>
+  .modal-body h3 {
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .modal-body div {
+    padding-bottom: 10px;
+  }
+
+  .modal-container a {
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .modal-container a:focus {
+    text-decoration:none;
+  }
+
+  @media (min-width: 565px) {
+    .modal-container a br {
+      content: " ";
+      display: none;
+    }
+  }
+</style>
+<div class="modal-container">
+  <a href="javascript:void(0)" data-toggle="modal" data-target="#privacyPolicy">Politique de<br/> Confidentialité</a>
+  &nbsp;
+  <span>|</span> &nbsp;
+  <a href="javascript:void(0)" data-toggle="modal" data-target="#termsAndConditions">Termes et<br/> Conditions</a>
+  &nbsp;
+  <span>|</span> &nbsp;
+  <a href="javascript:void(0)" data-toggle="modal" data-target="#contactUs">Contactez-<br/>nous</a>
+</div>
+
+
+<!-- Privacy Policy -->
+<div class="modal fade" id="privacyPolicy" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+
+        <div class="flex flex-col gap-2">
+          <div>
+            <h2>POLITIQUE DE CONFIDENTIALITÉ</h2>
+            <p>Cette politique de confidentialité fait partie de nos conditions d'utilisation.
+              En utilisant ce site ou notre boutique en ligne, vous acceptez d'être lié et de vous conformer à
+              cette politique de confidentialité et à nos conditions d'utilisation.</p>
+          </div>
+          <div>
+            <h3>SECTION A - RESTRICTIONS D'ÂGE SUR L'ACCÈS ET LES ACHATS</h3>
+            <p>Vous devez avoir au moins 18 ans pour accéder à ce site. Si vous avez moins de 18 ans,
+              vous n'êtes pas autorisé à utiliser ce site pour quelque raison que ce soit. Vous devez avoir l'âge
+              légal requis par l'état ou la province vous êtes en train d'acheter nos produits. Il est de votre
+              responsabilité de savoir
+              si vous êtes légalement en mesure de acheter nos produits.</p>
+          </div>
+          <div>
+            <h3>SECTION B : QUELLES INFORMATIONS RECUEILLONS-NOUS ET QU'EN FAISONS-NOUS ?</h3>
+
+            <p>Lorsque vous achetez quelque chose dans notre magasin, dans le cadre du processus d'achat et
+              de vente,
+              nous recueillons les les informations personnelles que vous nous fournissez telles que votre nom, votre
+              adresse et
+              votre adresse e-mail et l'historique de vos commandes. Nous avons aussi utiliser des cookies, des balises
+              Web ou d'autres outils qui collectent des informations facilitant l'utilisation de notre boutique et notre
+              site.</p>
+
+            <p>Lorsque vous visitez notre site, certaines informations sont automatiquement collectées.
+              Cela peut inclure des informations telles que comme système d'exploitation (OS) exécuté sur votre
+              appareil,
+              l'adresse IP (Internet Protocol) (qui peut être utilisée pour obtenir votre géolocalisation), les temps
+              d'accès,
+              le type de navigateur, la langue et le site Web que vous avez visité avant notre site. Nous recueillons
+              également des informations
+              sur la façon dont vous utilisez notre site, y compris les éléments que vous avez avec lesquels vous avez
+              interagi, des métadonnées
+              et d'autres détails sur ces éléments, des états de changement et d'autres actions de l'utilisateur.</p>
+
+            <p>Marketing par e-mail : En nous fournissant votre adresse e-mail, vous nous autorisez à vous
+              envoyer des e-mails sur notre magasin,
+              les nouveaux produits, les nouvelles marques du portefeuille Super Slim et d'autres mises à jour. Tu avoir
+              la
+              possibilité de se désinscrire de ces e-mails à tout moment en cliquant sur le bouton « Se désinscrire »
+              inclus au bas de chaque e-mail.</p>
+
+            <p>Comment nous utilisons vos informations. En général, nous utilisons les
+              informations que nous recueillons principalement pour fournir, maintenir, protéger et
+              améliorer notre site et nos produits actuels et développer de nouveaux produits et marques.
+              Nous utiliser les informations personnelles collectées via notre site comme décrit ci-dessous
+              et décrit ailleurs dans ce Politique de :</p>
+          </div>
+          <div>
+            <ul class="w-[90%] mx-auto">
+              <li><span class="mr-2">•</span> Faciliter la création et la sécurisation de votre Compte sur notre réseau
+                ;
+              </li>
+              <li><span class="mr-2">•</span> Vous identifier en tant qu'utilisateur dans notre système ;</li>
+              <li><span class="mr-2">•</span> Améliorer nos produits, notre site et la façon dont nous gérons notre
+                entreprise ;
+              </li>
+              <li><span class="mr-2">•</span> Comprendre et améliorer votre expérience d'utilisation de notre site et de
+                nos produits ;
+              </li>
+              <li><span class="mr-2">•</span> Fournir et livrer les produits et services que vous demandez ;</li>
+              <li><span class="mr-2">•</span> Répondre à vos commentaires ou questions et demander à notre équipe
+                d'assistance de fournir un service sur <span data-brand-name></span> LLC ;
+              </li>
+              <li><span class="mr-2">•</span> Vous envoyer des informations connexes, y compris des confirmations, des
+                factures, des avis techniques, des mises à jour, alertes de sécurité et messages d'assistance et
+                administratifs ;
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>SECTION C – CONSENTEMENT</h3>
+            <h3>Comment obtenez-vous mon consentement ?</h3>
+            <p>En nous fournissant des informations personnelles pour effectuer une transaction, passer une commande,
+              organiser un livraison ou retour d'un achat, vous consentez à ce que nous collections et
+              utilisions vos informations (vos les informations de carte de crédit sont traitées dans la section
+              4 ci-dessous).</p>
+            <h3>Comment retirer mon consentement ?</h3>
+            <p>Vous pouvez retirer votre consentement à ce que nous vous contactions en cliquant sur le bouton "Se
+              désinscrire"
+              inclus dans le bas de chaque e-mail ou en nous contactant à <span data-email></span></p>
+          </div>
+          <div>
+            <h3>SECTION D – DIVULGATION</h3>
+            <ul>
+              <li>Nous ne partageons pas vos informations personnelles avec des tiers sans votre
+                consentement autre qu'avec le suivant :
+              </li>
+              <li>Fournisseurs de services tiers. Avec des tiers qui travaillent pour notre compte, à
+                condition que ces tiers les parties fournissent au moins le même niveau de protection de la vie privée
+                que celui requis par la présente politique de confidentialité ;
+              </li>
+              <li>Demandes légales. Pour se conformer aux lois ou pour répondre aux demandes légales et à
+                la procédure judiciaire (à condition que nous s'efforcera de vous informer à l'adresse que vous nous
+                avez indiquée si nous avons reçu une demande légale de vos informations );
+              </li>
+              <li>Protection des droits et de la propriété. Pour protéger les droits et la propriété de
+                Super Slim, nos agents, clients et autres, y compris pour faire respecter nos accords, politiques et
+                conditions inclus dans cette politique de confidentialité Politique ou nos Conditions d'utilisation ;
+              </li>
+              <li>Urgence. En cas d'urgence, y compris pour protéger la sécurité personnelle de toute
+                personne ; et
+              </li>
+              <li>Restructuration d'entreprise. Aux fins d'un accord commercial (ou de la négociation d'un
+                accord commercial) impliquant une vente ou un transfert de tout ou partie de notre entreprise ou de nos
+                actifs (les accords commerciaux peuvent inclure, par exemple, toute opération ou procédure de fusion, de
+                financement, d'acquisition, de cession ou de dissolution). Dans en cas d'insolvabilité, de faillite ou
+                de mise sous séquestre, les informations personnelles peuvent également être transférées en tant que un
+                actif commercial. Si une autre société acquiert notre société, nos activités ou nos actifs, cette
+                société sera également acquérir et posséder les informations personnelles que nous collectons et
+                assumera les droits et obligations concernant vos informations personnelles telles que décrites dans la
+                présente Politique.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>SECTION E - TRAITEMENT DES PAIEMENTS</h3>
+            <ul>
+              <li>Notre magasin est construit sur une plate-forme logicielle de commerce électronique
+                appelée Woo Commerce qui nous permet de vendre nos produits et services pour vous.
+              </li>
+              <li>Paiement : si vous nous fournissez vos informations de carte de crédit pendant le
+                processus de paiement, nous les envoyons à notre passerelle de paiement conforme PCI-DSS pour un
+                traitement utilisant la technologie de cryptage SSL. Votre carte de crédit les informations sont
+                stockées pour les commandes d'abonnement récurrentes ainsi que dans mon compte pour un paiement plus
+                rapide expérience.
+              </li>
+              <li>Toutes les passerelles de paiement direct sont conformes aux normes définies par PCI-DSS
+                telles que gérées par le PCI Security Standards Council, qui est un effort conjoint de marques telles
+                que Visa, MasterCard, American Express et Découvrez.
+              </li>
+              <li>Les exigences PCI-DSS aident à garantir le traitement sécurisé des informations de carte
+                de crédit par notre magasin et nos processeurs de paiement et fournisseurs de services.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>SECTION F - SERVICES TIERS</h3>
+            <ul>
+              <li>Notre politique ne couvre aucun service tiers. Pour en savoir plus sur la confidentialité
+                de ces tiers pratiques, veuillez lire leurs politiques de confidentialité.
+              </li>
+              <li>Liens : lorsque vous cliquez sur des liens sur notre boutique, ils peuvent vous diriger
+                hors de notre site. Nous ne sommes pas responsable des pratiques de confidentialité des autres sites et
+                vous encourage à lire leurs politiques de confidentialité.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>SECTION G - SÉCURITÉ</h3>
+            <ul>
+              <li>Pour protéger vos informations personnelles, nous prenons des précautions raisonnables et
+                suivons les règles généralement acceptées pratiques de l'industrie pour s'assurer qu'elles ne sont pas
+                perdues, utilisées à mauvais escient, consultées, divulguées, modifiées ou détruit. Vos informations
+                personnelles sont protégées par votre mot de passe - ne partagez jamais ce mot de passe avec quelqu'un.
+                <span data-brand-name></span> LLC ne vous contactera jamais pour vous demander votre mot de passe.
+              </li>
+              <li>Si vous nous fournissez vos informations de carte de crédit, les informations sont
+                transmises à notre serveur en utilisant technologie Secure Socket Layer (SSL) qui utilise la norme de
+                cryptage AES-256.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>SECTION H - ÂGE DE CONSENTEMENT</h3>
+            <ul>
+              <li>En utilisant ce site, vous déclarez que vous avez au moins l'âge de la majorité dans
+                votre état ou province de résidence, ou que vous avez l'âge de la majorité dans votre état ou province
+                de résidence et que vous consentez à l'une de vos personnes à charge mineures utilisant ce site.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>SECTION I - LA LOI DES ÉTATS-UNIS S'APPLIQUE</h3>
+            <ul>
+              <li>Ce site est destiné aux utilisateurs situés aux États-Unis. En nous envoyant vos
+                Informations Personnelles de l'extérieur des États-Unis, vous consentez à l'application de la loi
+                américaine et à l'utilisation et à la divulgation de vos informations personnelles conformément à la
+                présente politique de confidentialité. Il vous appartient de déterminer si l'accès ce site et l'achat de
+                nos produits sont légaux là où vous vous trouvez. Vous accédez à ce site et achetez nos produits à vos
+                risques et périls, et vous êtes responsable du respect de toutes les lois, règles, règlements et
+                traités.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>SECTION J - MODIFICATIONS DE CETTE POLITIQUE DE CONFIDENTIALITÉ</h3>
+            <ul>
+              <li>Nous nous réservons le droit de modifier cette politique de confidentialité à tout
+                moment, veuillez donc la consulter fréquemment. Changements et les clarifications entreront en vigueur
+                dès leur publication sur le site Web. encourage les visiteurs à consulter cette page pour toute
+                modification de sa politique de confidentialité.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>QUESTIONS ET COORDONNÉES</h3>
+            <ul>
+              <li>Si vous souhaitez : accéder, corriger, modifier ou supprimer toute
+                information personnelle que nous possédons à votre sujet (autre autres que les informations
+                générées automatiquement par votre utilisation de notre site), déposer une plainte ou
+                simplement Pour plus d'informations,
+                contactez notre service clientèle à l'adresse <span data-email></span>.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div data-dismiss="modal"
+           style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
+        <div style="display: flex; flex-flow: column; padding-top: 0.7em;">
+          <img src="img/exit_icon_white.png"
+               style="width: 50%; margin: 0 auto;"
+          >
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Terms and Conditions -->
+<div class="modal fade" id="termsAndConditions" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="terms-text">
+          <div>
+            <h2>TERMES ET CONDITIONS</h2>
+            <strong>Accord entre l’utilisateur et <span data-website></span></strong> <br> <br>
+            Bienvenue sur <span data-website></span>. Le site <span data-website></span> (le « site ») est composé de
+            pages web
+            variées, opéré par <span data-brand-name></span>, LLC (« <span data-brand-name></span> »). <span
+              data-website></span> vous est offert conditionnellement à votre accord sans modifications des termes,
+            conditions,
+            et avis contenus dans la présente (les termes). Votre utilisation de <span data-website></span> constitue
+            votre
+            accord aux termes entièrement. Lisez les termes et conditions attentivement et conservez une copie à des
+            fins de
+            références.
+          </div>
+          <div>
+            <h3>Confidentialité</h3>
+            Votre utilisation de <span data-website></span> est sujette aux politiques de confidentialité de <span
+              data-brand-name></span>. Lisez les politiques de confidentialité, qui gouverne également le site et
+            informe les
+            usagers de nos pratiques de collection de données.
+
+          </div>
+          <div>
+            <h3>Communication électronique</h3>
+            Visiter <span data-website></span> ou envoyer des courriels à l’adresse courriel fournie sur le site web
+            <span
+                data-website></span> constitue une communication électronique. Vous consentez à recevoir des
+            communications
+            électroniques et vous consentez aux termes, conditions, divulgation, et autres communications que nous
+            fournissions
+            électroniquement, via courriel et sur le site, satisfont toutes les exigences légales de ces communications
+            écrites.
+          </div>
+          <div>
+            <h3>Votre compte</h3>
+            Si vous utilisez ce site, vous êtes responsable de maintenir la confidentialité de votre compte, votre mot
+            de passe,
+            l’accès à votre ordinateur et vous consentez à accepter la responsabilité pour toutes les activités
+            produites sur
+            votre compte et mot de passe. Vous ne pouvez pas assigner ou transférer votre compte à une autre personne ou
+            entité.
+            Vous acceptez que <span data-brand-name></span> ne soit pas responsable d’un accès d’une tierce personne sur
+            votre
+            compte résultant d’un vol ou d’un détournement. <span data-brand-name></span>, LLC, et ses associés se
+            réservent le
+            droit de refuser ou annuler un service, un compte, ou de retirer ou modifier le contenu à notre discrétion.
+          </div>
+          <div>
+            <h3>ABONNEMENTS</h3>
+            Certaines parties du service sont facturées sur la base d’un abonnement (« abonnement(s) »). Vous serez
+            facturé en
+            avance sur une base récurrente et périodique (« cycle de facturation »). Les cycles de facturations sont
+            fixés
+            mensuellement, en fonction du type d’abonnement que vous avez choisi lors de l’achat de l’abonnement. Votre
+            acceptation du club d’épargne VIP et des rabais initiaux vous inscrit à un abonnement mensuel.
+          </div>
+          <div>
+            <p>À la fin de chaque cycle de facturation, votre abonnement sera automatiquement renouvelé
+              sous les
+              mêmes termes et conditions d’utilisation, à moins que vous annuliez votre abonnement ou que la compagnie
+              l’annule.
+              Vous pouvez annuler votre renouvellement d’abonnement en contactant le service à la clientèle via
+              téléphone ou
+              courriel</p>
+            <p>Un mode de paiement valide, incluant une carte de crédit ou PayPal, est nécessairement afin
+              de
+              traiter le paiement pour votre abonnement. Vous devez fournir des informations de paiement exactes,
+              incluant votre
+              nom complet, adresse, état, code postal, numéro de téléphone et un mode de paiement valide. En soumettant
+              vos
+              informations de paiement, vous autorisez automatiquement la compagnie à charger les frais d’abonnement de
+              votre
+              compte.</p>
+            <p>Si votre paiement automatique échoue pour quelque raison que ce soit, la compagnie émettra
+              une
+              facture électronique vous indiquant de procéder manuellement, incluant une date d’échéance, avec le
+              paiement
+              complet correspondant à votre cycle de facturation indiqué. </p>
+          </div>
+          <div>
+            <h3>Enfants âgés de moins de 18 ans</h3>
+            <span data-brand-name></span> ne collecte pas de données consciemment, ni en ligne ou hors-ligne, ni
+            d’informations
+            personnelles d’enfants âgés de moins de 18 ans. Si vous êtes âgés de moins de 18 ans, vous ne pouvez pas
+            utiliser le
+            site <span data-website></span>.
+          </div>
+          <div>
+            <h3>Politiques d’annulation et de remboursement</h3>
+            Votre satisfaction avec nos produits <span data-brand-name></span> est notre priorité numéro un. Si vous
+            n’êtes pas
+            complètement satisfaits, nous vous rembourserons dans un délai de 30 jours après avoir reçu le produit.
+          </div>
+          <div>
+            <h3>Liens pour sites tiers/ services tiers</h3>
+            <span data-website></span> et <span data-website></span> peuvent suggérer des liens provenant d’autres sites
+            internet (« sites liés »). Les sites liés ne sont pas sous le contrôle de <span data-brand-name></span> et
+            <span
+                data-brand-name></span> n’est pas responsable du contenu des sites liés, incluant sans limites les liens
+            dans ces
+            sites liés, ou des changements et mises à jour de ces sites. <span data-brand-name></span> fournit ces liens
+            par
+            commodité, et l’inclusion de ces liens n’implique pas l’approbation de <span data-brand-name></span>.
+          </div>
+          <div>
+            Certains services disponibles via <span data-brand-name></span> sont livrés par des sites internet tiers et
+            organisations. En utilisant n’importe quels produit, service ou fonctionnalité provenant du domaine <span
+              data-website></span>, vous reconnaissez et consentez que <span data-brand-name></span> pourrait partager
+            ces
+            informations et données avec n’importe quels partis tiers avec lesquels <span data-brand-name></span> a un
+            partenariat contractuel pour fournir le produit demandé, service ou fonctionnalité de la part des usagers de
+            <span
+                data-website></span> et ces clients.
+          </div>
+          <div>
+            <h3>Aucune utilisation illégale ou interdite/propriété intellectuelle</h3>
+            Vous bénéficiez d'une licence non exclusive, non transférable et révocable pour accéder et utilisez <span
+              data-website></span> en stricte conformité avec les présentes conditions d'utilisation. Comme condition de
+            votre
+            utilisation du site, vous garantissez à <span data-brand-name></span> que vous n'utiliserez pas le site à
+            des fins
+            illégales ou interdites par les présentes conditions. Vous ne pouvez pas utiliser le site d'une manière qui
+            pourrait
+            endommager, désactiver, surcharger ou détériorer le site ou interférer avec l'utilisation et la jouissance
+            du site
+            par toute autre partie. Vous ne pouvez pas obtenir ou tenter d'obtenir des documents ou des informations par
+            des
+            moyens non intentionnellement mis à disposition ou fournis par le biais du Site.
+          </div>
+          <div>Tout le contenu inclus dans le cadre du Service, tel que les textes, graphiques, logos, images, ainsi que
+            leur
+            compilation, et tout logiciel utilisé sur le Site, est la propriété de <span data-brand-name></span> ou de
+            ses
+            fournisseurs et est protégé par le droit d'auteur et autres lois qui protègent la propriété intellectuelle
+            et les
+            droits de propriété. Vous acceptez d'observer et de respecter tous les droits d'auteur et autres avis de
+            propriété,
+            légendes ou autres restrictions contenus dans un tel contenu et n'y apporterez aucune modification.
+          </div>
+          <div>Vous vous engagez à ne pas modifier, publier, transmettre, participer au transfert ou à la vente, créer
+            des
+            œuvres dérivées ou exploiter de quelque manière que ce soit le contenu, en tout ou en partie, trouvé sur le
+            Site. Le
+            contenu de <span data-brand-name></span> n'est pas destiné à la revente. Votre utilisation du site ne vous
+            autorise
+            pas à faire une utilisation non autorisée de tout contenu protégé et vous ne supprimerez ni ne modifierez
+            aucun
+            droit de propriété ou avis d'attribution dans aucun contenu. Vous utiliserez le contenu protégé uniquement
+            pour
+            votre usage personnel et ne ferez aucune autre utilisation du contenu sans l'autorisation écrite expresse de
+            <span
+                data-brand-name></span> et du titulaire des droits d'auteur. Vous convenez que vous n'acquérez aucun
+            droit de
+            propriété sur tout contenu protégé. Nous ne vous accordons aucune licence, expresse ou implicite, sur la
+            propriété
+            intellectuelle de <span data-brand-name></span> ou de nos concédants de licence, sauf autorisation expresse
+            des
+            présentes Conditions.
+          </div>
+          <div>
+            <h3>POLITIQUE DE SANS-FIL DÉTAILLÉE</h3>
+            Les données obtenues auprès de vous dans le cadre de ce service SMS peuvent inclure votre nom, votre
+            adresse, votre
+            numéro de téléphone portable, le nom de votre fournisseur, ainsi que la date, l'heure et le contenu de vos
+            messages.
+            En plus, des frais dont vous êtes informé, les tarifs de messagerie standard de votre fournisseur
+            s'appliquent à
+            notre confirmation et à toutes les correspondances SMS ultérieures. Tous les frais sont facturés et payables
+            à votre
+            fournisseur de services mobiles. Nous ne serons pas responsables des retards dans la réception des messages
+            SMS, car
+            la livraison est soumise à une transmission effective de votre opérateur réseau. Les services de messagerie
+            SMS sont
+            fournis sur une base TELLE QUELLE. Nous pouvons utiliser des informations personnelles pour fournir les
+            services que
+            vous avez demandés, y compris des services qui affichent un contenu et des publicités personnalisés. En plus
+            des
+            frais dont vous êtes informé, les tarifs de messagerie standard de votre fournisseur s'appliquent à notre
+            confirmation et à toutes les correspondances SMS ultérieures. Vous pouvez vous désinscrire et supprimer vos
+            informations SMS en envoyant "STOP", "END", "QUIT" au message texte SMS que vous avez reçu. Si vous
+            supprimez vos
+            informations SMS de notre base de données, elles ne seront plus utilisées par nous à des fins secondaires,
+            divulguées à des tiers ou utilisées par nous ou des tiers pour vous envoyer de la correspondance
+            promotionnelle.
+            Nous pouvons également utiliser des informations personnelles à des fins d'audit, de recherche et d'analyse
+            pour
+            exploiter et améliorer nos technologies et nos services. Nous pouvons partager des informations agrégées et
+            non
+            personnelles avec des tiers en dehors de <span data-brand-name></span> Gummies lorsque nous utilisons des
+            tiers pour
+            nous aider à traiter vos informations personnelles, nous exigeons qu'ils respectent notre politique de
+            confidentialité et toute autre mesure de confidentialité et de sécurité appropriée. Nous pouvons également
+            partager
+            des informations avec des tiers dans des circonstances limitées, notamment pour nous conformer à une
+            procédure
+            judiciaire, prévenir une fraude ou un dommage imminent et assurer la sécurité de notre réseau et de nos
+            services.
+            Vous pouvez supprimer vos informations de notre base de données. Si vous supprimez vos informations de notre
+            base de
+            données, elles ne seront plus utilisées par nous à des fins secondaires, divulguées à des tiers ou utilisées
+            par
+            nous ou des tiers pour vous envoyer de la correspondance promotionnelle. Vous pouvez supprimer vos
+            informations en
+            envoyant votre demande par écrit par courriel à <span data-email></span> ou en envoyant "STOP", "TERMINER",
+            "QUITTER" au SMS que vous avez reçu.
+          </div>
+          <div>
+            <h3>Utilisation des services de communication</h3>
+            Le site peut contenir des services de babillards électroniques, des zones de discussion, des groupes de
+            nouvelles,
+            des forums, des communautés, des pages web personnelles, des calendriers et/ou d'autres moyens de messagerie
+            ou de
+            communication conçus pour vous permettre de communiquer avec le grand public ou avec un groupe
+            (collectivement,
+            "Services de communication"). Vous acceptez d'utiliser les Services de communication uniquement pour
+            publier,
+            envoyer et recevoir des messages et du matériel appropriés et liés au Service de communication.
+          </div>
+          <div>À titre d'exemple, et sans limitation, vous acceptez que lorsque vous utilisez un service de
+            communication, vous
+            ne : diffamez, abusez, harcelez, traquez, menacez ou autrement violez les droits légaux (tels que les droits
+            à la
+            vie privée et à la publicité) d'autrui ; publier, publier, télécharger, distribuer ou diffuser tout sujet,
+            nom,
+            matériel ou information inappropriée, profane, diffamatoire, contrefaite, obscène, indécente ou illégale ;
+            télécharger des fichiers contenant des logiciels ou d'autres éléments protégés par les lois sur la propriété
+            intellectuelle (ou par les droits de confidentialité de la publicité) à moins que vous ne possédiez ou ne
+            contrôliez
+            les droits y afférents ou que vous n'ayez pas reçu tous les consentements nécessaires ; télécharger des
+            fichiers
+            contenant des virus, des fichiers corrompus ou tout autre logiciel ou programme similaire susceptible
+            d'endommager
+            le fonctionnement de l'ordinateur d'autrui ; faire de la publicité ou proposer de vendre ou d'acheter des
+            biens ou
+            des services à des fins commerciales, à moins que ce service de communication n'autorise spécifiquement de
+            tels
+            messages ; mener ou transmettre des sondages, des concours, des systèmes pyramidaux ou des chaînes de
+            lettres ;
+            télécharger tout fichier publié par un autre utilisateur d'un service de communication dont vous savez, ou
+            devriez
+            raisonnablement savoir, qu'il ne peut pas être légalement distribué de cette manière ; falsifier ou
+            supprimer les
+            attributions d'auteur, les avis légaux ou autres avis appropriés ou les désignations ou étiquettes de
+            propriété de
+            l'origine ou de la source du logiciel ou de tout autre matérielle contenue dans un fichier qui est
+            téléchargé ;
+            restreindre ou empêcher tout autre utilisateur d'utiliser et de profiter des Services de communication ;
+            violer tout
+            code de conduite ou autres directives pouvant s'appliquer à un service de communication particulier ;
+            récolter ou
+            autrement collecter des informations sur les autres, y compris les adresses courriel, sans leur consentement
+            ;
+            violer les lois ou réglementations applicables.
+          </div>
+          <div><span data-brand-name></span> n'a aucune obligation de surveiller les services de communication.
+            Cependant, <span
+                data-brand-name></span> se réserve le droit d'examiner les documents publiés sur un service de
+            communication et de
+            supprimer tout matériel à sa seule discrétion. <span data-brand-name></span> se réserve le droit de résilier
+            votre
+            accès à tout ou partie des services de communication à tout moment et sans préavis pour quelque raison que
+            ce soit.
+          </div>
+          <div><span data-brand-name></span> se réserve toujours le droit de divulguer toute information nécessaire pour
+            satisfaire à toute loi, réglementation, procédure judiciaire ou demande gouvernementale applicable, ou de
+            modifier,
+            de refuser de publier ou de supprimer toute information ou tout matériel, en tout ou en partie, à la seule
+            discrétion de <span data-brand-name></span>.
+          </div>
+          <div>Soyez toujours prudent lorsque vous fournissez des informations d'identification personnelle sur
+            vous-même ou vos
+            enfants dans tout service de communication. <span data-brand-name></span> ne contrôle ni n'approuve le
+            contenu, les
+            messages ou les informations trouvés dans tout service de communication et, par conséquent, <span
+                data-brand-name></span> décline spécifiquement toute responsabilité concernant les services de
+            communication et
+            toute action résultant de votre participation à tout service de communication. Les gestionnaires et les
+            hôtes ne
+            sont pas des porte-parole autorisés de <span data-brand-name></span>, et leurs opinions ne reflètent pas
+            nécessairement celles de <span data-brand-name></span>.
+          </div>
+          <div>Les documents téléchargés sur un service de communication peuvent être soumis à des restrictions
+            affichées sur
+            l'utilisation, la reproduction et/ou la diffusion. Vous êtes responsable du respect de ces limitations si
+            vous
+            téléchargez les documents.
+          </div>
+          <div>Le matériel fourni à <span data-website></span> ou publié sur n'importe quelle page web <span
+              data-brand-name></span>
+            <span data-brand-name></span> ne revendique pas la propriété du matériel que vous fournissez à <span
+                data-website></span> (y compris les commentaires et suggestions) ou que vous publiez, téléchargez,
+            saisissez ou
+            soumettez à un site <span data-brand-name></span> ou à nos services associés (collectivement "Soumissions").
+            Cependant, en publiant, téléchargeant, saisissant, fournissant ou soumettant votre soumission, vous accordez
+            à <span
+                data-brand-name></span>, à nos sociétés affiliées et aux sous-licenciés nécessaires l'autorisation
+            d'utiliser
+            votre soumission dans le cadre de l'exploitation de leurs activités internet, y compris, sans s'y limiter,
+            les
+            droits de : copier, distribuer, transmettre, afficher publiquement, exécuter publiquement, reproduire,
+            éditer,
+            traduire et reformater votre soumission ; et de publier votre nom en lien avec votre soumission.
+          </div>
+          <div>Aucune compensation ne sera versée à l'égard de l'utilisation de votre soumission, comme prévu dans les
+            présentes. <span data-brand-name></span> n'a aucune obligation de publier ou d'utiliser toute soumission que
+            vous
+            pourriez fournir et peut supprimer toute soumission à tout moment à la seule discrétion de <span
+                data-brand-name></span>.
+          </div>
+          <div>En publiant, téléchargeant, saisissant, fournissant ou soumettant votre soumission, vous garantissez et
+            déclarez
+            que vous possédez ou contrôlez autrement tous les droits sur votre soumission tels que décrits dans cette
+            section, y
+            compris, sans s'y limiter, tous les droits nécessaires pour que vous fournissiez, postiez, télécharger,
+            saisir ou
+            soumettre les soumissions.
+          </div>
+          <div>
+            <h3>Comptes tiers</h3>
+            Vous pourrez connecter votre compte <span data-brand-name></span> à des comptes tiers. En connectant votre
+            compte
+            <span data-brand-name></span> à votre compte tiers, vous reconnaissez et acceptez que vous consentez à la
+            divulgation continue d'informations vous concernant à d'autres (conformément à vos paramètres de
+            confidentialité sur
+            ces sites tiers). Si vous ne souhaitez pas que les informations vous concernant soient partagées de cette
+            manière,
+            n'utilisez pas cette fonctionnalité.
+          </div>
+          <div>
+            <h3>Utilisateurs internationaux</h3>
+            Le service est contrôlé, exploité et administré par <span data-brand-name></span> depuis nos bureaux aux
+            États-Unis.
+            Si vous accédez au service à partir d'un emplacement en dehors des États-Unis, vous êtes responsable du
+            respect de
+            toutes les lois locales. Vous acceptez de ne pas utiliser le contenu <span data-brand-name></span>
+            accessible via
+            www.<span data-website></span> dans aucun pays ou de quelque manière que ce soit interdit par les lois,
+            restrictions
+            ou réglementations applicables.
+          </div>
+          <div>
+            <h3>Indemnité</h3>
+            Vous acceptez d'indemniser, de défendre et de dégager de toute responsabilité <span data-brand-name></span>,
+            ses
+            dirigeants, administrateurs, employés, agents et tiers, pour tout perte, coût, responsabilité et dépense (y
+            compris
+            les honoraires d'avocat raisonnables) liés à ou découlant de votre utilisation de ou l'incapacité d'utiliser
+            le site
+            ou les services, toute publication d'utilisateur que vous avez faite, votre violation de l'un des termes du
+            présent
+            accord ou votre violation de tout droit d'un tiers, ou votre violation de toute loi, règle ou réglementation
+            applicable. <span data-brand-name></span> se réserve le droit, à ses propres frais, d'assumer la défense et
+            le
+            contrôle exclusifs de toute question autrement sujette à indemnisation de votre part, auquel cas vous
+            coopérerez
+            pleinement avec <span data-brand-name></span> pour faire valoir toutes les défenses disponibles.
+          </div>
+          <div>
+            <h3>Arbitrage</h3>
+            Dans le cas où les partis ne sont pas en mesure de résoudre tout litige entre eux, découlant de ou
+            concernant les
+            présentes conditions générales, ou toute disposition des présentes, que ce soit en matière contractuelle,
+            délictuelle ou autrement en droit ou en équité pour les dommages ou toute autre réparation, alors ce
+            différend ne
+            sera résolu que par un arbitrage définitif et exécutoire conformément à la loi fédérale sur l'arbitrage,
+            mené par un
+            seul arbitre neutre et administré par l'American Arbitration Association, ou un service d'arbitrage
+            similaire choisi
+            par les parties, dans un lieu mutuellement convenu par le des soirées. La décision de l'arbitre est
+            définitive et un
+            jugement peut être rendu par tout tribunal compétent. Si une action, une procédure ou un arbitrage en
+            justice ou en
+            équité découle des présentes conditions générales ou les concerne, la partie gagnante aura le droit de
+            recouvrer ses
+            frais et les honoraires d'avocat raisonnables. Les parties acceptent d'arbitrer tous les litiges et
+            réclamations
+            concernant les présentes conditions générales ou tout litige découlant des présentes conditions générales,
+            que ce
+            soit directement ou indirectement, y compris les réclamations délictuelles résultant des présentes
+            conditions
+            générales. Les parties conviennent que la loi fédérale sur l'arbitrage régit l'interprétation et
+            l'application de
+            cette disposition. L'ensemble du différend, y compris la portée et l'applicabilité de la présente clause
+            d'arbitrage, sera déterminé par l'arbitre. Cette clause d'arbitrage survivra à la résiliation des présentes
+            conditions générales.
+          </div>
+          <div>
+            <h3>Clause de non-responsabilité</h3>
+            LES INFORMATIONS, LOGICIELS, PRODUITS ET SERVICES INCLUS DANS LE SITE OU DISPONIBLES PAR L'INTERMÉDIAIRE DE
+            CE SITE
+            PEUVENT CONTENIR DES INEXACTITUDES OU DES ERREURS TYPOGRAPHIQUES. DES MODIFICATIONS SONT PÉRIODIQUEMENT
+            AJOUTÉES AUX
+            INFORMATIONS CI-DESSOUS. <span data-brand-name></span>, LLC ET/OU SES FOURNISSEURS PEUVENT APPORTER DES
+            AMÉLIORATIONS ET/OU DES MODIFICATIONS AU SITE À TOUT MOMENT.
+          </div>
+          <div>
+            <span data-brand-name></span>, LLC ET/OU SES FOURNISSEURS NE FONT AUCUNE DÉCLARATION SUR LA PERTINENCE, LA
+            FIABILITÉ, LA DISPONIBILITÉ, L'OPPORTUNITÉ ET L'EXACTITUDE DES INFORMATIONS, LOGICIELS, PRODUITS, SERVICES
+            ET
+            GRAPHIQUES CONNEXES CONTENUS SUR LE SITE À TOUT USAGE. DANS LA MESURE MAXIMALE AUTORISÉE PAR LA LOI
+            APPLICABLE, TOUS
+            CES INFORMATIONS, LOGICIELS, PRODUITS, SERVICES ET GRAPHIQUES ASSOCIÉS SONT FOURNIS « EN L'ÉTAT » SANS
+            GARANTIE OU
+            CONDITION D'AUCUNE SORTE. <span data-brand-name></span>, LLC ET/OU SES FOURNISSEURS DÉCLINENT PAR LA
+            PRÉSENTE TOUTES
+            LES GARANTIES ET CONDITIONS CONCERNANT CES INFORMATIONS, LOGICIELS, PRODUITS, SERVICES ET GRAPHIQUES
+            ASSOCIÉS, Y
+            COMPRIS TOUTES LES GARANTIES OU CONDITIONS IMPLICITES DE QUALITÉ MARCHANDE, D'ADÉQUATION À UN USAGE
+            PARTICULIER, DE
+            TITRE ET DE NON- INFRACTION.
+          </div>
+          <div>
+            DANS LA MESURE MAXIMALE AUTORISÉE PAR LA LOI APPLICABLE, EN AUCUN CAS <span data-brand-name></span>, LLC
+            ET/OU SES
+            FOURNISSEURS NE SERONT RESPONSABLES DES DOMMAGES DIRECTS, INDIRECTS, PUNITIFS, ACCESSOIRES, SPÉCIAUX,
+            CONSÉCUTIFS OU
+            DE TOUT DOMMAGE QUELCONQUE, Y COMPRIS, SANS LIMITATION, LES DOMMAGES POUR LA PERTE D'UTILISATION, DE DONNÉES
+            OU DE
+            PROFITS, RÉSULTANT DE OU LIÉS DE QUELQUE FAÇON QUE CE SOIT À L'UTILISATION OU À LA PERFORMANCE DU SITE, AVEC
+            LE
+            RETARD OU L'IMPOSSIBILITÉ D'UTILISER LE SITE OU LES SERVICES ASSOCIÉS, LA FOURNITURE OU L'IMPOSSIBILITÉ DE
+            FOURNIR
+            DES SERVICES, OU POUR TOUT INFORMATION, LOGICIEL, PRODUIT, SERVICE ET GRAPHIQUE ASSOCIÉS OBTENUS VIA LE
+            SITE, OU
+            DÉCOULANT AUTREMENT DE L'UTILISATION DU SITE, QU'ILS SOIENT BASÉS SUR UN CONTRAT, UN DÉLIT, UNE NÉGLIGENCE,
+            UNE
+            RESPONSABILITÉ STRICTE OU AUTRE, MÊME SI <span data-brand-name></span>, LLC OU L'UN DE SES FOURNISSEURS ONT
+            ÉTÉ
+            INFORMÉS DE LA POSSIBILITÉ DE DOMMAGES. PARCE QUE CERTAINS ÉTATS/JURIDICTIONS N'AUTORISENT PAS L'EXCLUSION
+            OU LA
+            LIMITATION DE RESPONSABILITÉ POUR LES DOMMAGES INDIRECTS OU ACCESSOIRES, LA LIMITATION CI-DESSUS PEUT NE PAS
+            S'APPLIQUER À VOUS. SI VOUS N'ÊTES PAS SATISFAIT D'UNE PARTIE DU SITE OU DE L'UNE DE CES CONDITIONS
+            D'UTILISATION,
+            VOTRE SEUL ET UNIQUE RECOURS EST DE CESSER D'UTILISER LE SITE.
+          </div>
+          <div>
+            <h3>Résiliation/Restriction d'accès</h3>
+            <span data-brand-name></span> se réserve le droit, à sa seule discrétion, de résilier votre accès au site et
+            aux
+            services connexes ou à toute partie de ceux-ci à tout moment, sans préavis. L'utilisation du site n'est pas
+            autorisée dans toute juridiction qui ne donne pas effet à toutes les dispositions des présentes conditions,
+            y
+            compris, sans s'y limiter, cette section.
+          </div>
+          <div>Vous acceptez qu'aucune relation de coentreprise, de partenariat, d'emploi ou d'agence n'existe entre
+            vous et
+            <span data-brand-name></span> en raison de cet accord ou de l'utilisation du site. L'exécution de cet accord
+            par
+            <span data-brand-name></span> est soumise aux lois et procédures judiciaires en vigueur, et rien dans cet
+            accord ne
+            déroge au droit de <span data-brand-name></span> de se conformer aux demandes ou exigences gouvernementales,
+            judiciaires et d'application de la loi relative à votre utilisation du site ou informations fournies à ou
+            recueillies par <span data-brand-name></span> en ce qui concerne une telle utilisation. Si une partie de cet
+            accord
+            est jugée invalide ou inapplicable conformément à la loi applicable, y compris, mais sans s'y limiter, les
+            exclusions de garantie et les limitations de responsabilité énoncées ci-dessus, la disposition invalide ou
+            inapplicable sera réputée remplacée par une disposition valide et exécutoire qui correspond le mieux à
+            l'intention
+            de la disposition originale et le reste de l'accord restera en vigueur.
+          </div>
+          <div>Sauf indication contraire dans les présentes, cet accord constitue l'intégralité de l'accord entre
+            l'utilisateur
+            et <span data-brand-name></span> en ce qui concerne le Site et il remplace toutes les communications et
+            propositions
+            antérieures ou contemporaines, qu'elles soient électroniques, orales ou écrites, entre l'utilisateur et
+            <span
+                data-brand-name></span> avec vis-à-vis du Site. Une version imprimée de cet accord et de tout avis donné
+            sous
+            forme électronique sera recevable dans les procédures judiciaires ou administratives fondées sur ou liées à
+            cet
+            accord dans la même mesure et sous réserve des mêmes conditions que les autres documents et enregistrements
+            commerciaux générés et conservés à l'origine dans formulaire imprimé. Les parties souhaitent expressément
+            que cet
+            accord et tous les documents connexes soient rédigés en anglais.
+          </div>
+          <div>
+            <h3>Modifications des conditions</h3>
+            <span data-brand-name></span> se réserve le droit, à sa seule discrétion, de
+            modifier les conditions d'utilisation de <span data-website></span>. La version la plus récente des
+            Conditions
+            remplacera toutes les versions précédentes. <span data-brand-name></span> vous encourage à consulter
+            périodiquement
+            les Conditions pour rester informé de nos mises à jour.
+          </div>
+          <div>
+            <h3>Utilisation</h3>
+            <span data-brand-name></span>, LLC ne sera pas tenu responsable de toute utilisation inappropriée ou
+            incorrecte des
+            informations ou des services sur ce site web et n'assume aucune responsabilité pour l'utilisation par
+            quiconque des
+            informations ou des services. <span data-brand-name></span>, LLC ne peut être tenu responsable des dommages
+            directs
+            ou indirects causés de quelque manière que ce soit par l'utilisation des informations ou des services de ce
+            site
+            web. Cela inclut, mais sans s'y limiter, l'approvisionnement ou les biens ou services de substitution ;
+            perte
+            d'utilisation, de données ou de profits ; ou interruption d'activité. Cette exclusion de responsabilité
+            s'applique à
+            tout dommage ou blessure que vous, l'utilisateur du site web, pourriez percevoir comme étant causé par les
+            informations ou les services de ce site web, ou par l'utilisation de ce site web.
+          </div>
+          <div><h3>Contactez-nous</h3>
+            <span data-brand-name></span> accueille vos questions ou commentaires concernant les conditions :
+          </div>
+          <div>
+            <p><span data-brand-name></span>,</p>
+            <p>Adresse courriel:</p>
+            <p><span data-email></span></p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div data-dismiss="modal"
+           style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
+        <div style="display: flex; flex-flow: column; padding-top: 0.7em;">
+          <img src="img/exit_icon_white.png"
+               style="width: 50%; margin: 0 auto;"
+          >
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Contact Us -->
+<div class="modal fade" id="contactUs" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <h3>Contactez-nous</h3>
+        <br>
+        <p>
+          Contactez-nous<br>
+          Téléphone: <a data-phone-link></a><br>
+          Email: <a data-email-link></a>
+        </p>
+      </div>
+      <div data-dismiss="modal"
+           style="cursor: pointer;position: absolute;top: -1em; right: -1em;width: 30px ;height: 30px; border-radius: 50%; background-color: black;">
+        <div style="display: flex; flex-flow: column; padding-top: 0.7em;">
+          <img src="img/exit_icon_white.png"
+               style="width: 50%; margin: 0 auto;"
+          >
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
