@@ -14,7 +14,7 @@ body {margin: 0;font-family: var(--bs-body-font-family);font-size: var(--bs-body
   width: 53%;
   padding: 3% 10% 3% 1%;
 }
-.logo img{ width:7.5%; margin:0 0 0;}
+.logo img{  margin:0 0 0;}
 header {width: 100%;text-align: center;padding:   0 0;}  
 .title{ width:100%; margin:0 0 2%}
 .title img{ width:100%; display:block;}
