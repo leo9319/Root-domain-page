@@ -14,61 +14,6 @@
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
 <style>
-  .mobotitle-wrapper {
-    font-family: myriad-pro;
-    padding: 0 0.75em;
-  }
-  .mobocontent-wrapper {
-    font-family: myriad-pro-semi-bold;
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 0 0.75em;
-    font-size: 1.1em;
-  }
-  .phone-wrapper {
-    padding: 0 0.75em;
-    display: flex;
-    flex-flow: column nowrap;
-  }
-  .phone-wrapper-item {
-    font-family: myriad-pro-semi-bold;
-    color: red;
-    display: flex;
-    flex-flow: row nowrap;
-    height: 30px;
-    align-items: center;
-    gap: 2px;
-    
-  }
-
-  .desktop-title-wrapper {
-    font-family: myriad-pro;
-    font-size: 30px;
-    padding: 0 0.75em;
-    margin-top: -2em;
-  }
-  .desktop-content-wrapper {
-    font-family: myriad-pro-semi-bold;
-    font-size: 25px;
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 0 0.75em;
-  }
-  .desktop-phone-wrapper {
-    padding: 0 1.3em;
-    display: flex;
-    flex-flow: column nowrap;
-  }
-  .desktop-phone-wrapper-item {
-    font-family: myriad-pro-semi-bold;
-    display: flex;
-    flex-flow: row nowrap;
-    height: 40px;
-    align-items: center;
-    gap: 2px;
-    font-size: 2em;
-    
-  }
 
 
 </style>
@@ -77,107 +22,81 @@
 <body> 
   <body>
     <div class="wrapper">
+      <!-- desktop -->
       <div class="desktop">
-        
         <header>
           <a href="#" class="logo"><img src="img/logo.jpg" ></a>
         </header>
-      <div class="right" style="margin-top: 2em;">
+      <div class="right">
         <div class="title">
-          <div class="desktop-title-wrapper" style="color: red;">
-            <h2 style="font-size: 1.5em;">Thank you for visiting <br> KHONSU FORMULA CBD GUMMIES!</h2>
-          </div>
+           <img src="img/title.png">
         </div>
-         <div class="footcontent">
-          <div class="desktop-content-wrapper">
-            <p>Our customer service team is available 24/7 <br>via email and phone:</p>
-          </div>
-         </div>
-        <div class="contact">
-          <div class="desktop-phone-wrapper">
-            <div class="desktop-phone-wrapper-item">
-              <img src="img/phone.png" style="width: 40px;">
-              <a href=tel:8332745164 style="color: red; text-decoration: none;"><span>(833) 274-5164</span></a>
-            </div>
-            <div class="desktop-phone-wrapper-item">
-              <img src="img/email.png" style="width: 40px;">
-              <a href=mailto:care@khonsuformula.com style="color: red;"><span>care@khonsuformula.com</span></a>
-            </div>
-          </div>
-          <div class="desktop-content-wrapper">
-            <p>Don't hesitate to reach out to our wonderful<br>
-            team today - they are there to help answer<br> any questions you may have!
-            </p>
+       
+        <div class="contact" style="position: relative;">
+          <img src="img/phoneemail.png">
+          <a href="tel:8332745164"><div style="position: absolute; left: 7.5%; top: 52%; width: 28%; height: 17%;"></div></a>
+          <a href="mailto:care@khonsuformula.com"><div style="position: absolute; left: 7.5%; top: 73%; width: 47%; height: 17%;"></div></a>
+        </div>
+        
+          <div class="footcontent">
+            <img src="img/topcontent.png" > 
+          </div> 
+          <div>
             <div style="
             display: flex; 
             flex-flow: row nowrap; 
             align-items: center;
             gap: 3px;
-            font-family: myriad-pro;">
-      <a style="color: red;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
-      <span style="font-size: 0.8em;color: red;">|</span>
-      <a  style="color: red;"  href="javascript:void(0)" class="" data-toggle="modal" data-target="#termsAndConditions">Terms and Conditions</a>
-  <span style="font-size: 0.8em;color: red;">|</span>
-      <a  style="color: red;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#contactUs">Contact Us</a>
+            font-family: myriad-pro-semi-bold;
+            padding: 1em;
+            font-size: 1.5em;
+            ">
+              <a style="color: red;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
+              <span style="font-size: 0.8em;color: red;">|</span>
+              <a style="color: red;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#termsAndConditions">Terms and Conditions</a>
+              <span style="font-size: 0.8em;color: red;">|</span>
+              <a style="color: red;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#contactUs">Contact Us</a>
           </div>
-          </div>
-          
-        </div>  
         
+       
         </div>
-    
       </div>
-        <div class="mobile" style="overflow-x: hidden;">
-          <header>
-              <a href="#"><img src="img/logo.jpg"></a>
-            </header>
-          <div class="mobotitle">
-              <div class="mobotitle-wrapper" style="color: red; font-size: 15px;">
-                <h2 style="font-size: 2em;">Thank you for visiting <br> KHONSU FORMULA CBD GUMMIES!</h2>
+      </div>
+      <!-- mobile -->
+      <div class="mobile">
+        <header>
+            <a href="#"><img src="img/logo.jpg"></a>
+          </header>
+        <div class="mobotitle">
+           <img src="img/mobotitle.png">
+          </div>
+           <div class="footcontent"><img src="img/mobocontent.png"></div>
+          <div class="moboright">
+          <div class="mobocontent">   
+                 <div class="phone" style="position: relative">
+                  <img src="img/mobophone.png">
+                  <a href="tel:8332745164"><div style="position: absolute; left: 13%; top: 54%; width: 30%; height: 17%;"></div></a>
+                  <a href="mailto:care@khonsuformula.com"><div style="position: absolute; left: 13%; top: 75%; width: 50%; height: 17%;"></div></a>
+                  </div>
+                  <div style="
+                  display: flex; 
+                  flex-flow: column nowrap; 
+                  align-items: left;
+                  gap: 3px;
+                  margin-top: 1em;
+                  font-size: 1em;
+                  padding: 0 2em;
+                  font-family: myriad-pro-semi-bold;">
+                    <a style="color: red;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
+                    <a style="color: red;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#termsAndConditions">Terms and Conditions</a>
+                    <a style="color: red;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#contactUs">Contact Us</a>
+                  </div>
+             
               </div>
           </div>
-            <div class="moboright">
-            <div class="mobocontent" style="font-size: 1em;">
-                      <div class="mobocontent-wrapper" style="margin-top: -1em;">
-                        <p>Our customer service team is available 24/7 <br>via email and phone:</p>
-                      </div>
-                      <div class="phone">
-                        <div class="phone-wrapper">
-                          <div class="phone-wrapper-item">
-                            <img src="img/phone.png" style="width: 30px;">
-                            <a href=tel:8332745164 style="color: red; text-decoration: none;"><span>(833) 274-5164</span></a>
-                          </div>
-                          <div class="phone-wrapper-item">
-                            <img src="img/email.png" style="width: 30px;">
-                            <a href=mailto:care@khonsuformula.com style="color: red;"><span>care@khonsuformula.com</span></a>
-                          </div>
-                        </div>
-                      </div>    
-                      <div class="mobocontent-wrapper" style="width: 60%;">
-                        <p>Don't hesitate to reach out to our wonderful<br>
-                          team today - they are there to help answer<br> any questions you may have!
-                          </p></div>
-                          <div style="
-                          display: flex; 
-                          flex-flow: column nowrap; 
-                          align-items: center;
-                          padding: 1em;
-                          gap: 3px;
-                          font-family: myriad-pro;
-                          ">
-                          <div style="display: flex; flex-flow: column nowrap; margin-right: auto;">
-                            <a style="color: red;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
-                            <a style="color: red;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#termsAndConditions">Terms and Conditions</a>
-                            <a style="color: red;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#contactUs">Contact Us</a>
-                          </div>
-                
-                        </div>            
-                </div>
-            </div>
-            <div class="mobile" style="position: absolute; bottom: -0.1em; left: 0.25em;">
-        
-            </div>
-        </div>
+          
+      </div>
+      </div>
 
 
         <!-- Privacy Policy -->
