@@ -15,63 +15,33 @@
 
 
 <style>
-  .mobotitle-wrapper {
-    font-family: myriad-pro-semi-bold;
-    padding: 0 1.25em;
+    .responsive-policies {
+  font-size: 1.5em;
+  margin-left: 4.1%;
+}
+
+.responsive-policies-mobile {
+  font-size: 1.3em;
+}
+
+@media (min-width: 565px) {
+  .modal-container a br {
+    content: " ";
+    display: none;
   }
-  .mobocontent-wrapper {
-    font-family: myriad-pro-semi-bold;
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 0 1.5em;
-    font-size: 1.1em;
-  }
-  .phone-wrapper {
-    padding: 0 1em;
-    display: flex;
-    flex-flow: column nowrap;
-  }
-  .phone-wrapper-item {
-    font-family: myriad-pro-semi-bold;
-    color: red;
-    display: flex;
-    flex-flow: row nowrap;
-    height: 30px;
-    align-items: center;
-    gap: 2px;
-    
+}
+@media (min-width: 1700px) {
+  .responsive-policies {
+    font-size: 2em;
   }
 
-  .desktop-title-wrapper {
-    font-family: myriad-pro-semi-bold;
-    font-size: 2.6em;
-    padding: 0 1em;
-    margin-top: -2em;
+}
+@media (min-width: 2000px) {
+  .responsive-policies {
+    font-size: 3em;
   }
-  .desktop-content-wrapper {
-    font-family: myriad-pro-semi-bold;
-    font-size: 1.5em;
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 0 2em;
-  }
-  .desktop-phone-wrapper {
-    padding: 0 2.25em;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 0.5em;
-  }
-  .desktop-phone-wrapper-item {
-    font-family: myriad-pro-semi-bold;
-    color: red;
-    display: flex;
-    flex-flow: row nowrap;
-    height: 40px;
-    align-items: center;
-    gap: 2px;
-    font-size: 2em;
-    
-  }
+
+}
 
 </style>
 </head>
@@ -98,14 +68,13 @@
             <img src="img/topcontent.png" > 
           </div> 
           <div>
-            <div style="
+            <div class="responsive-policies" style="
             display: flex; 
             flex-flow: row nowrap; 
             align-items: center;
             gap: 3px;
             font-family: myriad-pro-semi-bold;
             padding: 1em;
-            font-size: 1.5em;
             ">
               <a style="color: darkblue;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
               <span style="font-size: 0.8em;color: darkblue;">|</span>

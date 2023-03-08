@@ -13,6 +13,35 @@
 <link href="css/fonts.css" rel="stylesheet"> 
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
+<style>
+      .responsive-policies {
+    font-size: 1.5em;
+    margin-left: 4.1%;
+  }
+
+  .responsive-policies-mobile {
+    font-size: 1.3em;
+  }
+
+  @media (min-width: 565px) {
+    .modal-container a br {
+      content: " ";
+      display: none;
+    }
+  }
+  @media (min-width: 1700px) {
+    .responsive-policies {
+      font-size: 2em;
+    }
+
+  }
+  @media (min-width: 2000px) {
+    .responsive-policies {
+      font-size: 3em;
+    }
+
+  }
+</style>
 
 </head>
 <body> 
@@ -40,14 +69,13 @@
                 <a href="tel:8667953493"><div style="position: absolute; left: 10%; top: 47.5%; width: 37%; height: 17%;"></div></a>
                 <a href="mailto:care@orangecountyketo.com"><div style="position: absolute; left: 10%; top: 69%; width: 71%; height: 17%;"></div></a>
               </div>
-              <div style="
+              <div class="responsive-policies" style="
               display: flex; 
               flex-flow: row nowrap; 
               align-items: center;
               gap: 3px;
               font-family: myriad-pro-semi-bold;
               padding: 1em;
-              font-size: 1.5em;
               ">
                 <a style="color: darkblue;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
                 <span style="font-size: 0.8em;color: darkblue;">|</span>
@@ -82,7 +110,7 @@
                       align-items: left;
                       gap: 3px;
                       margin-top: 1em;
-                      margin-left: 30%;
+                      margin-left: 35%;
                       font-size: 0.9em;
                       padding: 0 2em;
                       font-family: myriad-pro-semi-bold;">

@@ -12,7 +12,35 @@
 <link href="css/responsive.css" rel="stylesheet"> 
 <link href="css/fonts.css" rel="stylesheet"> 
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
+<style>
+  .responsive-policies {
+    font-size: 1.5em;
+    margin-left: 4.1%;
+  }
+  
+  .responsive-policies-mobile {
+    font-size: 1.3em;
+  }
+  
+  @media (min-width: 565px) {
+    .modal-container a br {
+      content: " ";
+      display: none;
+    }
+  }
+  @media (min-width: 1700px) {
+    .responsive-policies {
+      font-size: 2em;
+    }
+  
+  }
+  @media (min-width: 2000px) {
+    .responsive-policies {
+      font-size: 3em;
+    }
+  
+  }
+  </style>
 </head>
 <body> 
   <body>
@@ -38,14 +66,13 @@
           </div>
           
           <div>
-            <div style="
+            <div class="responsive-policies" style="
             display: flex; 
             flex-flow: row nowrap; 
             align-items: center;
             gap: 3px;
             font-family: myriad-pro-semi-bold;
             padding: 1em;
-            font-size: 1.5em;
             ">
               <a style="color: darkblue;" href="javascript:void(0)" class="" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
               <span style="font-size: 0.8em;color: darkblue;">|</span>
