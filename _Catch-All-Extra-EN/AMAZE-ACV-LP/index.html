@@ -1,84 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-<meta name="generator" content="Jekyll v4.0.1">
-<title>TRIDENT-CBD-GUMMIES-LP</title>
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>AMAZE-ACV-LP</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!-- Custom styles for this template -->
-
-<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-<link href="css/layout.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"> 
-<link href="css/fonts.css" rel="stylesheet">
-
-
-<style>
-  .mobotitle-wrapper {
-    font-family: myriad-pro;
-    padding: 0 0em;
-  }
-  .mobocontent-wrapper {
-    font-family: myriad-pro;
-    font-size:14px;
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 0 2em;
-  }
-  .mobocontent-wrapper p {
-    padding:6px 0;
-    margin:0;
-  }
-  .phone-wrapper {
-    padding: 0 1em;
-    display: flex;
-    flex-flow: column nowrap;
-  }
-  .phone-wrapper-item {
-    font-family: myriad-pro-semi-bold;
-    color: red;
-    display: flex;
-    flex-flow: row nowrap;
-    height: 25px;
-    align-items: center;
-    gap: 2px;
-  }
-
-  .desktop-title-wrapper {
-    font-family: myriad-pro;
-    font-size: 25px;
-    padding: 0 0.75em;
-  }
-  .desktop-title-wrapper h2 {
-    margin: 10px 0 20px 0;
-  }
-  .desktop-content-wrapper {
-    font-family: myriad-pro-light;
-    font-size: 2.5em;
-    display: flex;
-    flex-flow: column nowrap;
-    margin-left: 0.7em;
-  }
-  .desktop-phone-wrapper {
-    padding: 0 1.3em;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 0.5em;
-  }
-  .desktop-phone-wrapper-item {
-    font-family: myriad-pro-semi-bold;
-    color: red;
-    display: flex;
-    flex-flow: row nowrap;
-    height: 40px;
-    align-items: center;
-    gap: 2px;
-    font-size: 2em;
-  }
-
-</style>
+  <link href="css/layout.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
   <style>
     .modal-container {
       color: #ccc;
@@ -88,11 +21,11 @@
       left: 0;
       padding: 10px 0 12px 0;
       text-align: center;
-      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1));
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
     }
 
     .modal-container a {
-      color: #ff0000;
+      color: #263b88;
       text-shadow: 1px 0px 1px #ddd;
       font-size: 13px;
     }
@@ -119,39 +52,12 @@
     .modal-dialog {
       overflow-y: initial !important
     }
-
-
-    @media (min-width: 1000px) and (orientation:portrait) {
-      .mobile {
-        display:block;
-      }
-      .desktop {
-        display:none;
-      }
-      .moboright {
-        float: left;
-        font-size: 200%;
-        width: 100%;
-      }
-      body {
-
-        border: 10px solid red;
-        background-image:
-            linear-gradient(to top, rgba(255,255,255, 0), rgba(255,255,255, 1)),
-            url('img/mobobg.png');
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-position: 100% 100%;
-
-        height: 100vh;
-      }
-    }
-
   </style>
   <script>
-    const brand = 'Trident CBD'
-    const website = 'cbdtrident.com'
-    const email = 'care@cbdtrident.com'
-    const phone = '(888) 683-7480'
+    const brand = 'AMAZE ACV'
+    const website = 'amazeacv.com'
+    const email = 'care@amazeacv.com'
+    const phone = '(866) 277-5054'
 
     window.onload = function () {
 
@@ -166,7 +72,7 @@
         // email if it does not have anything inside
         // like this:
         // <a data-email-link></a>
-        if ($(el).html().trim() === ''){
+        if ($(el).html().trim() === '') {
           $(el).text(email)
         }
         el.setAttribute('href', 'mailto:' + email)
@@ -181,85 +87,60 @@
         // phone if it does not have anything inside
         // like this:
         // <a data-phone-link></a>
-        if ($(el).html().trim() === ''){
+        if ($(el).html().trim() === '') {
           $(el).text(phone)
         }
-        const numberPhone = phone.replaceAll(/[() -\.]/g,'')
+        const numberPhone = phone.replaceAll(/[() -\.]/g, '')
         el.setAttribute('href', 'tel:' + numberPhone)
       })
     }
 
   </script>
 </head>
-<body> 
+<body>
 <div class="wrapper">
-    <div class="desktop">
+  <div class="desktop">
     <header>
-    	<a href="#" class="logo"><img src="img/logo.png" ></a>
+      <a href="#" class="logo"><img src="img/logo.png"></a>
     </header>
-    <div class="right" style="margin-top: 1em;">
+    <div class="left">
       <div class="title">
-        <div class="desktop-title-wrapper" style="color: red;">
-          <h2>Thanks for visiting TRIDENT CBD GUMMIES!</h2>
-        </div>
+        <img src="img/d-title.png">
       </div>
-       <div class="footcontent">
-        <div class="desktop-content-wrapper" >
-          <p>Our customer service team is here to help you! Reach out to them to help clarify any questions or concenrs today!</p>
-            <p>Our customer service team is available 24/7 via email and phone:</p>
-        </div>
-       </div>
+      <div class="topcontent">
+        <img src="img/d-topcontent.png">
+      </div>
       <div class="contact">
-        <div class="desktop-phone-wrapper">
-          <div class="desktop-phone-wrapper-item">
-            <img src="img/phone.png" style="width: 50px;">
-            <a data-phone-link style="color: red; text-decoration: none;"></a>
-          </div>
-          <div class="desktop-phone-wrapper-item">
-            <img src="img/email.png" style="width: 50px;">
-            <a data-email-link style="color: red;"></a>
-          </div>
-        </div>
-      </div>  
+        <img src="img/d-phonecontent.png">
+        <a data-phone-link><img src="img/d-phone.png"></a>
+        <a data-email-link><img src="img/d-email.png"></a>
       </div>
-  </div>
-  <div class="mobile">
-    	<header>
-        	<a href="#"><img src="img/logo.png"></a>
-        </header>
-    	<div class="mobotitle">
-        <div class="mobotitle-wrapper" style="color: red; font-size: 21px; ">
-          <img src="img/mobotitle.png">
-        </div>
-      	</div>
-
-        <div class="moboright">
-        <div class="mobocontent">
-          <div class="mobocontent-wrapper" style="margin-top: -1em;">
-            <p>Our customer service team is always happy to help answer any questions or 
-              concerns - don't hesitate to reach out today!</p>
-            <p>Our customer service team is always available 24/7 via email and phone:</p>
-          </div>
-        
-             	<div class="phone">
-                <div class="phone-wrapper">
-                  <div class="phone-wrapper-item">
-                    <img src="img/phone.png" style="width: 30px; margin-left:140px; ">
-                    <a data-phone-link style="color: red; text-decoration: none; margin-right: 2.75em;"></a>
-                  </div>
-                  <div class="phone-wrapper-item">
-                    <img src="img/email.png" style="width: 30px;margin-left:140px;">
-                    <a data-email-link style="color: red;"><span data->care@cbdtrident.com</span></a>
-                  </div>
-                </div>
-              </div>
-                
-            </div>
-        </div>
-        
     </div>
-    
+  </div>
+
+  <div class="mobile">
+    <header>
+      <a href="#"><img src="img/logo.png"></a>
+    </header>
+    <div class="mobotitle">
+      <img src="img/m-title.png">
+    </div>
+    <div class="moboright">
+      <div class="mobocontent">
+        <div class="topcontent">
+          <img src="img/m-topcontent.png">
+        </div>
+        <div class="phone">
+          <img src="img/m-phonecontent.png">
+          <a data-phone-link><img src="img/m-phone.png"></a>
+          <a data-email-link><img src="img/m-email.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
+
 
 
 <div class="modal-container" style="">
@@ -952,18 +833,7 @@
   </div>
 </div>
 
-<!-- Optional JavaScript; choose one of the two! -->
-<!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-   -->
-
-
-
-
 </body>
 </html>
