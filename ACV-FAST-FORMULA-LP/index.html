@@ -23,8 +23,12 @@
             font-family: myriad-pro-light;
             display: flex;
             flex-flow: column nowrap;
-            padding: 0 1.2em;
-            font-size: 1.2em;
+            padding: 0 1.2em 0 1.5em;
+            font-size: 1.5em;
+        }
+        .mobocontent-wrapper-right  {
+            margin-left: 40%;
+            padding-left:0;
         }
         .phone-wrapper {
             padding: 0 1em;
@@ -41,11 +45,14 @@
             gap: 2px;
             font-size: 1.25em;
         }
+        .phone-wrapper-item a {
+            margin-right:20px;
+        }
         .desktop-title-wrapper {
             font-family: myriad-pro;
             font-size: 30px;
             padding: 0 0.75em;
-            margin-top: -2em;
+            margin-top: -1em;
         }
         .desktop-content-wrapper {
             font-family: myriad-pro-light;
@@ -131,10 +138,10 @@
             </div>
             <div class="footcontent">
                 <div class="desktop-content-wrapper">
-                    <p style="font-size: 32px; margin-top: 40px">Our customer service team is available 24/7<br> via email and phone:</p>
+                    <p style="font-size: 32px; margin-top: 0px">Our customer service team is available 24/7 via email and phone:</p>
                 </div>
             </div>
-            <div class="contact" style="margin-top: 30px">
+            <div class="contact" style="margin-top: 10px">
                 <div class="desktop-phone-wrapper">
                     <div class="desktop-phone-wrapper-item">
                         <img src="img/phone.png" style="width: 50px;">
@@ -146,7 +153,7 @@
                     </div>
                 </div>
                 <div class="desktop-content-wrapper">
-                    <p style="font-size: 32px; margin-top: 30px">Dont hesitate reaching out to our wonderful <br>team today - they are there to help  answer <br> any questions you may have!</p>
+                    <p style="font-size: 32px; margin-top: 30px">Don't hesitate reaching out to our wonderful team today - they are there to help  answer any questions you may have!</p>
                 </div>
             </div>
             <div class="footer">
@@ -172,33 +179,33 @@
         <div class="moboright">
             <div class="mobocontent">
                 <div class="mobocontent-wrapper" style="margin-top: -1.25em;">
-                    <p>Our customer service team is available 24/7<br> via email and phone:</p>
+                    <p>Our customer service team is available 24/7 via email and phone:</p>
                 </div>
                 <div class="phone">
-                    <div class="phone-wrapper" style="margin-top: 5em;">
+                    <div class="phone-wrapper" style="margin-top: 0em;">
                         <div class="phone-wrapper-item">
-                            <img src="img/phone.png" style="width: 30px; margin-left: auto;">
-                            <a href=tel:8778793169 style="color: darkblue; text-decoration: none; margin-right: 4.95em;"><span>877) 879-3169</span></a>
+                            <img src="img/phone.png" style="width: 30px; margin-left: 40%">
+                            <a href=tel:8778793169 style="color: darkblue; text-decoration: none;"><span>877) 879-3169</span></a>
                         </div>
                         <div class="phone-wrapper-item">
-                            <img src="img/email.png" style="width: 30px;  margin-left: auto;">
+                            <img src="img/email.png" style="width: 30px;  margin-left: 40%;">
                             <a href=mailto:care@acvfastformula.com style="color: darkblue;"><span>care@acvfastformula.com</span></a>
                         </div>
                     </div>
                 </div>
-                <div class="mobocontent-wrapper">
-                    <p style="margin-left: auto;">Dont hesitate reaching out <br> to our wonderful team today <br> - they are there to help  answer<br> any questions you may have!</p>
+                <div class="mobocontent-wrapper mobocontent-wrapper-right">
+                    <p >Dont hesitate reaching out <br> to our wonderful team today <br> - they are there to help  answer<br> any questions you may have!</p>
                 </div>
-                <div class="modal-container" style="display:flex; flex-direction: column; position: absolute; bottom: 40px; left: 40%">
-                    <a href="javascript:void(0)" class="" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
-                    <a href="javascript:void(0)" class="" data-toggle="modal" data-target="#termsAndConditions">Terms and Conditions</a>
-                    <a href="javascript:void(0)" class="" data-toggle="modal" data-target="#contactUs">Contact Us</a>
-                </div>
+
             </div>
         </div>
     </div>
 </div>
-
+<div class="modal-container" style="">
+    <a href="javascript:void(0)" class="" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
+    <a href="javascript:void(0)" class="" data-toggle="modal" data-target="#termsAndConditions">Terms and Conditions</a>
+    <a href="javascript:void(0)" class="" data-toggle="modal" data-target="#contactUs">Contact Us</a>
+</div>
 <!-- Privacy Policy -->
 <div class="modal fade" id="privacyPolicy" role="dialog">
     <div class="modal-dialog modal-lg">

@@ -11,8 +11,8 @@ body {margin: 0;font-family: var(--bs-body-font-family);font-size: var(--bs-body
 
 .right {
   float: right;
-  width: 52%;
-  padding: 3% 8% 3% 1%;
+  width: 47%;
+  padding: 0% 8% 3% 1%;
 }
 .logo img{ width:7%; margin:0 0 0;}
 header {width: 100%;text-align: center;padding:   0 0;}  

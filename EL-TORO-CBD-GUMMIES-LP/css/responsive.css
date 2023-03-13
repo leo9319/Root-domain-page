@@ -2,8 +2,8 @@
  @media (max-width: 1440px) and (max-height: 900px){
 .right {
   float: right;
-  width: 51%;
-  padding: 7% 5% 3% 1%;
+  width: 45%;
+  padding: 7% 5% 3% 5%;
 }
  }
 @media (min-width:900px) and (max-width:1441px) {
@@ -27,7 +27,7 @@ header img{ width:auto; height:80px}
 .mobotitme{ width:100%;}
 .mobotitme img{ width:100%;}
 
-.phone{ width:100%; margin:2% 0 0 }
+.phone{ width:100%; margin:0}
 .phone img{}
 
 .moboemail{ width:100%; margin:0 0 2%;}

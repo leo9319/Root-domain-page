@@ -11,8 +11,8 @@ body {margin: 0;font-family: var(--bs-body-font-family);font-size: var(--bs-body
 
 .right {
   float: right;
-  width: 60%;
-  padding: 3% 15% 3% 1%;
+  width: 57%;
+  padding: 3% 15% 3% 4%;
 }
 .logo img{ width:7%; margin:2px 0 0;}
 header {width: 100%;text-align: center;padding: 1.2% 0 0;}  
@@ -22,7 +22,7 @@ header {width: 100%;text-align: center;padding: 1.2% 0 0;}
 .topcontent {width: 100%;margin: 2% 0 5%;}
 .topcontent  img{ display:block; width:100%;}
 
-.phone{ width:100%; margin:0 0 2%}
+.phone{ width:100%; margin:0 0 0 0}
 .phone img{ display:block; width:100%;}
 
  
